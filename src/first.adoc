@@ -1,31 +1,43 @@
 = Github Classroom Workflow
 
-We assume that you have logged into vocareum. If you are looking for instruction to login to vocareum, click here 
+We assume that you have logged into vocareum. If you are looking for instruction to login to vocareum, [line-through]#click here#
 
 == Overview: 
 
-1️⃣ Accept Assignment → 2️⃣ Retrieve Assignment → 3️⃣ Start 
+*Accept* Assignment → *Retrieve* Assignment →  *Start* Assignment
 
-== 1. Accept your assignment on Github 
-1. You should receive an email with assignment link in it. The title of the email is __________
+== A. Accept your assignment on Github 
 
-2. Click on the email and accept the assignment
-
-3. Once you have accepted the assignment, you are ready to move on step 2.
+To insert example
 
 
-== 2. Log into Github Classroom & retrieve your assignment on VSCode
+== B. Log into Github Classroom & retrieve your assignment on VSCode
 
-NOTE:  Click on the Github tab at the side.
 
-1) Under classroom, click on *sign in*
+image:a.gif[a]  
 
-image:1.jpg[signin]  
+1) Click on *Sign In* under Classrooms
 
-2) Click *allow*
+2) Click on *Allow* when you see the prompt "The extension Github Classroom wants to sign in using Github"
 
-image:3.gif[allow]
+3) Click on *Copy and continue on Github* This will copy the code onto your clipboard.
 
-3)  
+4) Click on *Open*
 
-4. 
+5) At the device activation page, paste the code by doing ctrl + v or right click and select paste. Click *continue*
+
+6) Click on *Authorise Vscode*
+
+7) *Login* with your Github credentials
+
+8) Congratulations, you are all set!
+
+== retrieve the assignment
+
+image:b.gif[b]  
+
+1) Under Classroom, you should see your Github classroom name and the name of the assignment 
+
+2) Click on the folder to open the assignment
+
+3) Your assignment will open up and you can start working on it via Vscode.
