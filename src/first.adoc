@@ -25,7 +25,7 @@ image::1.jpg[signin]
 
 2. Click *allow*
 
-image::2.jpg[allow]
+image::3.gif[allow]
 
 3. 
 
