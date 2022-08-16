@@ -18,15 +18,14 @@ We assume that you have logged into vocareum. If you are looking for instruction
 
 NOTE:  Click on the Github tab at the side.
 
+1) Under classroom, click on *sign in*
 
-1. Under classroom, click on *sign in*
+image:1.jpg[signin]  
 
-image::1.jpg[signin]  
+2) Click *allow*
 
-2. Click *allow*
+image:3.gif[allow]
 
-image::3.gif[allow]
-
-3. 
+3)  
 
 4. 
