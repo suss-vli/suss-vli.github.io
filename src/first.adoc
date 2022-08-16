@@ -20,9 +20,12 @@ NOTE:  Click on the Github tab at the side.
 
 
 1. Under classroom, click on *sign in*
-image::1.jpg[x]  
 
-2. Follow the instruction on screen. 
+image::1.jpg[signin]  
+
+2. Click *allow*
+
+image::2.jpg[allow]
 
 3. 
 
