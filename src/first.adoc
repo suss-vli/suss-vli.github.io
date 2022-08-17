@@ -2,9 +2,7 @@
 
 We assume that you have logged into vocareum. If you are looking for instruction to login to vocareum, [line-through]#click here#
 
-== Overview: 
 
-*Accept* Assignment → *Retrieve* Assignment →  *Start* Assignment
 
 == A. Accept your assignment on Github 
 
@@ -13,6 +11,7 @@ To insert example
 
 == B. Log into Github Classroom & retrieve your assignment on VSCode
 
+You need to go to https://labs.vocareum.com/main/main.php[Vocareum] and login using your student username and password.
 
 image:a.gif[a]  
 
@@ -41,3 +40,7 @@ image:b.gif[b]
 2) Click on the folder to open the assignment
 
 3) Your assignment will open up and you can start working on it via Vscode.
+
+== Overview: 
+
+*Accept* Assignment → *Retrieve* Assignment →  *Start* Assignment
