@@ -11,9 +11,10 @@ To insert example
 
 == B. Log into Github Classroom & retrieve your assignment on VSCode
 
-You need to go to https://labs.vocareum.com/main/main.php[Vocareum] and login using your student username and password.
 
 image:a.gif[a]  
+
+0) Go to https://labs.vocareum.com/main/main.php[Vocareum] and login using your student username and password.
 
 1) Click on *Sign In* under Classrooms
 
