@@ -32,7 +32,7 @@ image:a.gif[a]
 
 8) Congratulations, you are all set!
 
-== retrieve the assignment
+== Retrieve the assignment
 
 image:b.gif[b]  
 
