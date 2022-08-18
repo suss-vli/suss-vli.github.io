@@ -2,15 +2,12 @@
 
 We assume that you have logged into vocareum. If you are looking for instruction to login to vocareum, [line-through]#click here#
 
-
-
 == A. Accept your assignment on Github 
 
 To insert example
 
 
 == B. Log into Github Classroom & retrieve your assignment on VSCode
-
 
 image:a.gif[a]  
 
@@ -32,7 +29,7 @@ image:a.gif[a]
 
 8) Congratulations, you are all set!
 
-== retrieve the assignment
+== Retrieve the assignment
 
 image:b.gif[b]  
 
@@ -42,6 +39,3 @@ image:b.gif[b]
 
 3) Your assignment will open up and you can start working on it via Vscode.
 
-== Overview: 
-
-*Accept* Assignment → *Retrieve* Assignment →  *Start* Assignment
