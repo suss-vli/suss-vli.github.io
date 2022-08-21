@@ -1,0 +1,14 @@
+= Finishing your interactive lab assignment
+
+
+== Running your interactive lab assignment
+
+1. You can run your assignment locally
+
+== Opening the interactive lab using Jupyter Lab 
+
+1. Go to the directory of the project
+
+2. Go to the 
+
+

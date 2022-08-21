@@ -18,7 +18,7 @@ image:0.gif[0]
 
 6) You're ready to go! 
 
-== B. Log into Github Classroom & retrieve your assignment on VSCode
+== B. Log into Github Classroom on VSCode
 
 image:a.gif[a]  
 
@@ -40,7 +40,7 @@ image:a.gif[a]
 
 8) Congratulations, you are all set!
 
-== Retrieve the assignment
+== Retrieve the assignment on VSCode
 
 image:b.gif[b]  
 
