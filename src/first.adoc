@@ -10,7 +10,7 @@ image:0.gif[0]
 
 2) Type in your username or email address, follow by Password and click Sign in. 
 
-3) You will see "You are being redirected to the authorised assignment"
+3) You will see "*You are being redirected to the authorised application*"
 
 4) Click *accept this assignment*
 
