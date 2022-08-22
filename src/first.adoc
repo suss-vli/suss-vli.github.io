@@ -12,7 +12,7 @@ image:0.gif[0]
 
 3) You will see "*You are being redirected to the authorised application*"
 
-4) Click *accept this assignment*
+4) Click *Accept this assignment*
 
 5) You will be asked to refresh this page. Go ahead and refresh the page. 
 
