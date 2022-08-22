@@ -49,4 +49,3 @@ image:b.gif[b]
 2) Click on the folder to open the assignment
 
 3) Your assignment will open up and you can start working on it via Vscode.
-
