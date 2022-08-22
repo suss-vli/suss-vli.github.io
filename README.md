@@ -9,4 +9,7 @@
   - [] Introduce semantic versions e.g v1.0.0 to track changes
   - [] Jane suggested using video instead of Gif
 
+
+This may be the best meme to [explain](https://twitter.com/PR0GRAMMERHUM0R/status/1561247203443752960) git to anyone
+
 19 August 2022
