@@ -1,0 +1,14 @@
+== Installing Github Classroom 
+
+
+1) Open the terminal 
+
+2) Run `openvscode-server --install-extension GitHub.classroom-0.0.3.vsix` where `GitHub.classroom-0.0.3.vsix` is the name
+
+Expected Output: 
+```
+labsuser@IDE:~/Downloads$ openvscode-server --install-extension GitHub.classroom-0.0.3.vsix 
+Installing extensions on proxy-6.vocareum.com...
+Extension 'GitHub.classroom-0.0.3.vsix' was successfully installed.
+labsuser@IDE:~/Downloads$ 
+```
