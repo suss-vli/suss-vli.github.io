@@ -11,13 +11,10 @@
   
 This may be the best meme to [explain](https://twitter.com/PR0GRAMMERHUM0R/status/1561247203443752960) git to anyone
 
-19 August 2022
 
-
-
-# Conclusion
+## Conclusion
 - Use Git for step by step animated image
 - Use mp4 for an overall start to end demostration
 Idea: To have an interactive guide that encourage self-help
 
-5 Sept 
+- Consider using https://github.com/ines/termynal to animate the temrinal for the lab author's guide
