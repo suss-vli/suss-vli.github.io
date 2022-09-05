@@ -1,3 +1,5 @@
+version: v0.1.0.alpha1
+
 # TODO
 
 - [] Generate a frontpage for VLI
