@@ -20,3 +20,6 @@ This may be the best meme to [explain](https://twitter.com/PR0GRAMMERHUM0R/statu
 Idea: To have an interactive guide that encourage self-help
 
 - Consider using https://github.com/ines/termynal to animate the temrinal for the lab author's guide
+
+
+- Use this for the frontpage https://startbootstrap.com/previews/business-frontpage
