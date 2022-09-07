@@ -23,3 +23,4 @@ This may be the best meme to [explain](https://twitter.com/PR0GRAMMERHUM0R/statu
 - [] change the call-to-action button to respond correctly to mobile view
 - [] add a page to call for interns & software engineers (devops, full-stack & data science) & craftmen and craftwomen for VLI project
 - [] automatically calculate the final year at the bottom 
+- [] make sure you have sticker footer
