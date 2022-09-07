@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
@@ -34,9 +35,9 @@
                 <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
                     <div class="m-4 m-lg-5">
                         <h1 class="display-1 fw-bold">VLI @ SUSS</h1>
-                        <p class="fs-4">Virtual Computing & Infrastructure for Every School of SUSS</p>
-                        <p class="fs-4">Creating Interactive & Digital Experience for Every Part of SUSS</p>
-                        <p class="fs-4">Autograding & Interactive Guide for Every Instructor of SUSS</p>
+                        <p class="fs-4"><span class="typing"></span> for Every School of SUSS</p>
+                        <!-- <p class="fs-4">Creating Interactive & Digital Experience for Every Part of SUSS</p>
+                        <p class="fs-4">Autograding & Interactive Guide for Every Instructor of SUSS</p> -->
 
                         <a class="btn btn-primary btn-lg" href="http://github.com/suss-vli">VLI Github</a>
                         <a class="btn btn-primary btn-lg" href="https://github.com/suss-vli/suss-vli.github.io/blob/main/src/first.adoc">Guide</a>
@@ -146,7 +147,13 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
 
-
+        <script>
+            var typed = new Typed('.typing', {
+                strings: ["Virtual Computing and Infrastructure", "Creating Interactive and Digital Experience", "Autograding and Interactive Guide"],
+                typeSpeed: 120,
+                loop: true
+              });              
+        </script>
 
     </body>
 </html>
