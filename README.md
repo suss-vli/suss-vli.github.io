@@ -19,7 +19,7 @@ Idea: To have an interactive guide that encourage self-help
 This may be the best meme to [explain](https://twitter.com/PR0GRAMMERHUM0R/status/1561247203443752960) git to anyone
 
 # Regarding Frontpage
-- [] add an animation to the header. certain page load should remain static. Subtitle should experience animation.
+- [] add an animation to the header. certain page load should remain static. Subtitle should experience animation. Use https://www.vantajs.com
 - [] change the call-to-action button to respond correctly to mobile view
 - [] add a page to call for interns & software engineers (devops, full-stack & data science) & craftmen and craftwomen for VLI project
 - [] automatically calculate the final year at the bottom 
