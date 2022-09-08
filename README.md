@@ -24,3 +24,4 @@ This may be the best meme to [explain](https://twitter.com/PR0GRAMMERHUM0R/statu
 - [] add a page to call for interns & software engineers (devops, full-stack & data science) & craftmen and craftwomen for VLI project
 - [] automatically calculate the final year at the bottom 
 - [] make sure you have sticker footer
+- [] add these to the website to get time https://time.is/widgets
