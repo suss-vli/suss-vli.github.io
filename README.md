@@ -25,4 +25,3 @@ This may be the best meme to [explain](https://twitter.com/PR0GRAMMERHUM0R/statu
 - [] automatically calculate the final year at the bottom 
 - [] make sure you have sticker footer
 - [] add these to the website to get time https://time.is/widgets
-test-suss-su
