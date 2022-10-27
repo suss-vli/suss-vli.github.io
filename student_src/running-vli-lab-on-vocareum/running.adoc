@@ -1,2 +1,0 @@
-== Running Jupyter Lab on your VSCode on vocareum
-

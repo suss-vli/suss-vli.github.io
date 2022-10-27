@@ -1,5 +1,9 @@
 Version: v0.1.0.alpha1
 
+This is the homepage of project VLI of SUSS. It also contains the submodules guides.
+
+We use open-source tools like `adoc`, `jekyll`, `markdown`, `codespell` and others. 
+
 
 # Using submodules for guides
 

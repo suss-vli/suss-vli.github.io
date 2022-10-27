@@ -1,3 +1,6 @@
 [submodule "0/instructor"]
 	path = 0/instructor
 	url = https://github.com/suss-vli/instructor-guide
+[submodule "0/admin"]
+	path = 0/admin
+	url = https://github.com/suss-vli/admin-guide
