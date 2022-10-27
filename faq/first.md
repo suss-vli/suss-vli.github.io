@@ -8,8 +8,7 @@ adoc -> .pdf
 adoc -> .mobi/ .epub 
 adoc -> html
 
-
-# Second solution
+# [Second solution](#second)
 
 1. If automation is not done properly, then it's going to be hard. 
 # regarding the adoc -> md conversion
