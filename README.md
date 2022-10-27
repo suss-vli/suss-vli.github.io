@@ -1,5 +1,15 @@
 Version: v0.1.0.alpha1
 
+
+# Using submodules for guides
+Regarding the guides, the first version is found at `0/`
+
+We are using `git submodules` to clone its source code into this github pages. Thus, the source code `suss-vli/student-guide`, instructor-guide is at `suss-vli/instructor-guide` and `suss-vli/admin-guide`
+
+# To get the latest update from submodules 
+
+simply run `git pull` to pull the content into `suss-vli.github.io`
+
 # TODO
 
 - [x] Generate a frontpage for VLI
