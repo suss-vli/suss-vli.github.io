@@ -4,12 +4,16 @@ This is the homepage of project VLI of SUSS. It also contains the submodules gui
 
 We use open-source tools like `adoc`, `jekyll`, `markdown`, `codespell` and others. 
 
-
 # Using submodules for guides
 
 The first version of the guide is found at `0/`
 
 We are using `git submodules` to clone its source code into this github pages. Thus, the source code `suss-vli/student-guide`, instructor-guide is at `suss-vli/instructor-guide` and `suss-vli/admin-guide`
+
+# Write where? Here or its respective submodules. 
+
+You should be writing at the repo of its respective submodules. For instance, if you want to update student-guide, you should go to [`student-guide`](https://github.com/suss-vli/student-guide) repo and push changes there. We will pull the changes at this repo in the future. 
+
 
 # To get the latest update from submodules 
 
