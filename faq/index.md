@@ -1,3 +1,3 @@
 # this is an index
 
-[This is a link to first page](/first)
+[This is a link to first page](/faq/first)
