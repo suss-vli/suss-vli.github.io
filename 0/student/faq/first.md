@@ -8,6 +8,14 @@ adoc -> .pdf
 adoc -> .mobi/ .epub 
 adoc -> html
 
+
+Inside the email
+Hey, this is the solution. See url (suss-vli.github.io/0/s/faq/first.html#second)
+
+1. Thus the solution will be to provide an easy way for them to search teh solution. Or easy way for US to search for one and provide the link. 
+2. There is a greater need to semantic version control. e.g v4.0.1
+3. Provide a link to github repo for them to search it.
+
 # [Second solution](#second)
 
 1. If automation is not done properly, then it's going to be hard. 

@@ -1,4 +1,4 @@
-# this is an index
+# Content page of 
 
 [This is a link to first page](/faq/first)
 
