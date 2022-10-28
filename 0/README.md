@@ -1,6 +1,8 @@
+Visit [student-guide faq](https://suss-vli.github.io/0/student/guide/faq)
+
 # Version 0 of the guides
 
-This is the documentation for `students`, `admins`, `instructors`
+This is the documentation for `students`
 
 # Pull content from each submodule
 
