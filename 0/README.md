@@ -21,5 +21,10 @@ e.g To add a repo to the path `0/instructor`
 git submodule add https://github.com/suss-vli/instructor-guide 0/instructor
 ```
 
+# Naming convention
 
+Besides the default page `index.md` of every directory, other .md should use a `meaningful`, `small cap` and `-` as part of the naming convention.
 
+For instance, the page on github classroom should probably have a `github-classroom.md` and contain every information about github classroom. 
+
+If the topic is too big, then i will propose having a directory called `github-classroom` and have other pages like `how-to-setup-github-classroom.md` or `how-to-authenticate-with-github.md` in that directory. Consequently, the url will be updated to have `suss-vli.github.io/0/student/github-classrom/how-to-setup-github-classroom.html` etc. 
