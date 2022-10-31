@@ -46,6 +46,7 @@ This may be the best meme to [explain](https://twitter.com/PR0GRAMMERHUM0R/statu
 
 - [ ] highlighting ability like stackoverflow (click link to see yellow fading highlight effect): https://stackoverflow.com/a/74258030/388280
 - [ ] May need this type of knowledge-based style: https://github.com/TeaGuns/odin - odin is open-source
+- [ ] maybe we can surround commands in such boxes https://kevquirk.com/how-to-create-a-simple-html-css-notice-box/ - submitter already has this
 
 # Regarding Frontpage
 - [] add an animation to the header. certain page load should remain static. Subtitle should experience animation. Use https://www.vantajs.com
