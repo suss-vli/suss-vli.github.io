@@ -42,6 +42,11 @@ Idea: To have an interactive guide that encourage self-help
 
 This may be the best meme to [explain](https://twitter.com/PR0GRAMMERHUM0R/status/1561247203443752960) git to anyone
 
+## for FAQ
+
+- [ ] highlighting ability like stackoverflow (click link to see yellow fading highlight effect): https://stackoverflow.com/a/74258030/388280
+- [ ] May need this type of knowledge-based style: https://github.com/TeaGuns/odin - odin is open-source
+
 # Regarding Frontpage
 - [] add an animation to the header. certain page load should remain static. Subtitle should experience animation. Use https://www.vantajs.com
 - [] change the call-to-action button to respond correctly to mobile view
