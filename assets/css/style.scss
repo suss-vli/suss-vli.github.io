@@ -3,7 +3,7 @@
 
 @import "{{ site.theme }}";
 
-header {
+body > div.container-lg.px-3.my-5.markdown-body > h1:nth-child(1) {
   display: none;
 }
 
