@@ -29,6 +29,7 @@ e.g. `cd 0/instructor; git pull`
 - [x] Generate a frontpage for VLI
 - [x] make sure you have sticker footer
 - [x] Introduce semantic versions e.g v1.0.0 to track changes
+- [x] automatically calculate the final year at the bottom 
 - Regarding the student guide for interactive lab guide by VLI + Github Classroom
 - [ ] Bigger Gif?
 - [ ] Gif for two platforms: window and mac. We are only supporting generally window and mac
@@ -53,5 +54,4 @@ This may be the best meme to [explain](https://twitter.com/PR0GRAMMERHUM0R/statu
 - [] add an animation to the header. certain page load should remain static. Subtitle should experience animation. Use https://www.vantajs.com
 - [] change the call-to-action button to respond correctly to mobile view
 - [] add a page to call for interns & software engineers (devops, full-stack & data science) & craftmen and craftwomen for VLI project
-- [] automatically calculate the final year at the bottom 
 - [] add these to the website to get time https://time.is/widgets
