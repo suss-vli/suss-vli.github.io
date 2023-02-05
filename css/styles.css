@@ -12204,3 +12204,12 @@ textarea.form-control-lg {
   background-color: #f4f4f4;
   padding: 5px;
 }
+
+.outer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content {
+  flex: 1;
+}
