@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* general styling */
+        :root {
+            --smaller: .75;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            align-items: center;
+            display: flex;
+            font-family: -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Oxygen-Sans,
+                Ubuntu,
+                Cantarell,
+                "Helvetica Neue",
+                sans-serif;
+        }
+
+        .container {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            font-weight: normal;
+            letter-spacing: .125rem;
+            text-transform: uppercase;
+        }
+
+        li {
+            display: inline-block;
+            font-size: 1.5em;
+            list-style-type: none;
+            padding: 1em;
+            text-transform: uppercase;
+        }
+
+        li span {
+            display: block;
+            font-size: 4.5rem;
+        }
+
+        .emoji {
+            display: none;
+            padding: 1rem;
+        }
+
+        .emoji span {
+            font-size: 4rem;
+            padding: 0 .5rem;
+        }
+
+        @media all and (max-width: 768px) {
+            h1 {
+                font-size: calc(1.5rem * var(--smaller));
+            }
+
+            li {
+                font-size: calc(1.125rem * var(--smaller));
+            }
+
+            li span {
+                font-size: calc(3.375rem * var(--smaller));
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Countdown to <span id="date"></span></h1>
+        <div id="countdown">
+            <ul>
+                <li><span id="weeks" class="weeks"></span> Weeks</li>
+                <li><span id="days" class="days"></span> Days</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("August 15, 2024 00:00:00").getTime();
+
+    // Update the countdown every 1 second
+    var x = setInterval(function () {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Calculate the distance between now and the countdown date
+        var distance = countDownDate - now;
+
+        // Calculate days and weeks
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var weeks = Math.floor(days / 7);
+
+        // Display the result
+        document.getElementById("date").innerText = new Date(countDownDate).getDate() + "/" + (new Date(countDownDate).getMonth() + 1) + "/" + new Date(countDownDate).getFullYear();
+        document.getElementById("days").innerText = days;
+        document.getElementById("weeks").innerText = weeks;
+
+        // If the countdown is over, display a message
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "EXPIRED";
+            document.getElementById("weeks").style.display = "none";
+            document.getElementById("days").style.display = "none";
+        }
+    }, 1000);
+</script>
+
+</html>
