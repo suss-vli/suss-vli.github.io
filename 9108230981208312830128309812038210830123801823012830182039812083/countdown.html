@@ -86,23 +86,38 @@
 
 <body>
     <div class="container">
-        <h1>Countdown to <span id="date"></span></h1>
-        <div id="countdown">
+        <h1>Countdown to <span id="date1"></span></h1>
+        <div id="countdown1">
             <ul>
-                <li><span id="weeks" class="weeks"></span> Weeks</li>
-                <li><span id="days" class="days"></span> Days</li>
+                <li><span id="weeks1" class="weeks"></span> Weeks</li>
+                <li><span id="days1" class="days"></span> Days</li>
+            </ul>
+        </div>
+        <h1>Countdown to <span id="date2"></span></h1>
+        <div id="countdown2">
+            <ul>
+                <li><span id="weeks2" class="weeks"></span> Weeks</li>
+                <li><span id="days2" class="days"></span> Days</li>
             </ul>
         </div>
     </div>
 </body>
 
 <script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("August 15, 2024 00:00:00").getTime();
+    // Set the dates we're counting down to
+    var countDownDate1 = new Date("June 1, 2024 00:00:00").getTime();
+    var countDownDate2 = new Date("August 15, 2024 00:00:00").getTime();
 
-    // Update the countdown every 1 second
-    var x = setInterval(function () {
+    // Update the countdowns every 1 second
+    var x1 = setInterval(function () {
+        updateCountdown(countDownDate1, "date1", "days1", "weeks1", "countdown1", "Oerwell");
+    }, 1000);
 
+    var x2 = setInterval(function () {
+        updateCountdown(countDownDate2, "date2", "days2", "weeks2", "countdown2", "ANL588");
+    }, 1000);
+
+    function updateCountdown(countDownDate, dateId, daysId, weeksId, countdownId, additionalText) {
         // Get today's date and time
         var now = new Date().getTime();
 
@@ -113,19 +128,19 @@
         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
         var weeks = Math.floor(days / 7);
 
-        // Display the result
-        document.getElementById("date").innerText = new Date(countDownDate).getDate() + "/" + (new Date(countDownDate).getMonth() + 1) + "/" + new Date(countDownDate).getFullYear();
-        document.getElementById("days").innerText = days;
-        document.getElementById("weeks").innerText = weeks;
+        // Display the result with additional text
+        document.getElementById(dateId).innerText = additionalText + ", " + new Date(countDownDate).toLocaleDateString();
+        document.getElementById(daysId).innerText = days;
+        document.getElementById(weeksId).innerText = weeks;
 
         // If the countdown is over, display a message
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById("countdown").innerHTML = "EXPIRED";
-            document.getElementById("weeks").style.display = "none";
-            document.getElementById("days").style.display = "none";
+            document.getElementById(countdownId).innerHTML = "EXPIRED";
+            document.getElementById(weeksId).style.display = "none";
+            document.getElementById(daysId).style.display = "none";
         }
-    }, 1000);
+    }
 </script>
 
 </html>
