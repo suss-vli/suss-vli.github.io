@@ -177,10 +177,6 @@
         });
 
         document.addEventListener('DOMContentLoaded', () => {
-            const urlParams = new URLSearchParams(window.location.search);
-            const hasXParam = urlParams.has('x');
-
-            if (hasXParam) {
                 VANTA.NET({
                     el: '#vanta',
                     mouseControls: false,
@@ -197,7 +193,6 @@
 
                 // Change header colour from black to white
                 document.getElementsByTagName('header')[0].classList.add('text-white');
-            }
         });
 
         window.onload = function () {
