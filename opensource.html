@@ -74,28 +74,29 @@
                         </div>
                         <div id="pin" style="text-align: center;"></div>
                     </div>
-                
+
                     <div id="repostab" class="tabcontent">
                         <div style="text-align: center; margin-top: 20px;">
                             <a href="https://github.com/suss-vli?tab=repositories">
-                                <button class="icontext"><img src="images/github_logo.png" width="30px" style="margin-right: 10px;">View
+                                <button class="icontext"><img src="images/github_logo.png" width="30px"
+                                        style="margin-right: 10px;">View
                                     all in GitHub</button>
                             </a>
                         </div>
                     </div>
-                
+
                     <script>
                         pinElement = document.getElementById("pin");
-                
+
                         gitpin("https://api.github.com/repos/suss-vli/suss-vli.github.io", "repo", pinElement);
                         gitpin("https://api.github.com/repos/suss-vli/langchain", "repo", pinElement);
                         gitpin("https://api.github.com/repos/suss-vli/privateGPT", "repo", pinElement);
                         gitpin("https://api.github.com/repos/suss-vli/ask-gpt-vscode", "repo", pinElement);
-                
+
                         const loaded = new Event("loaded");
-                
+
                         listrepos("suss-vli", document.getElementById("repostab")).then(reposcount => {
-                            document.getElementById("repos").innerHTML = document.getElementById("repos").innerHTML;
+                            document.getElementById("repos").innerHTML = document.getElementById("repos").innerHTML + " <span>" + reposcount.toString() + "</span>";
                             document.dispatchEvent(loaded);
                         });
                     </script>
@@ -107,7 +108,9 @@
                 <div class="container px-lg-5 pb-4">
                     <h2 class="fs-2 fw-bold">Contributions and Internship Opportunities</h2>
                     <p class="fs-4">
-                        If you are looking for an internship, please fill up this <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJnPD0rf-MZzRVk4jnFwuueLLUInuKmtLstSIkcxs0u9azxA/viewform">form</a>. You can increase your chances and contribute by sending us an issue and
+                        If you are looking for an internship, please fill up this <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSeJnPD0rf-MZzRVk4jnFwuueLLUInuKmtLstSIkcxs0u9azxA/viewform">form</a>.
+                        You can increase your chances and contribute by sending us an issue and
                         then sending us a PR.
                         <br><br>
                         If you are an SUSS AF, SUSS Faculty, or an external party looking for our open source project,
