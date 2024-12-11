@@ -37,14 +37,22 @@
         gtag('config', 'G-59V28ECH68');
     </script>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.dots.min.js"></script>
+
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/wiggle.css" rel="stylesheet" />
+    <link href="css/btn_back_to_top.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -60,555 +68,674 @@
             }
         }
 
-        #referral-message {
-            background-color: #112937;
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+        }
+
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
+
+        .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important;
         }
     </style>
 
+    <!-- Custom styles for this template -->
+    <link href="css/product.css" rel="stylesheet">
     <link href="css/internship.css" rel="stylesheet">
-    <link href="css/btn_back_to_top.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="outer">
-        <main class="content">
-            <p id="referral-message" style="display: none;"> </p>
+    <nav class="navbar navbar-expand-md bg-dark sticky-top" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand d-md-none" href="#">
+                <svg class="bi" width="24" height="24">
+                    <use xlink:href="#aperture" />
+                </svg>
+                VLI @ SUSS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+                aria-controls="offcanvas" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasLabel">VLI @ SUSS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav flex-grow-1 justify-content-between">
+                        <li class="nav-item"><a class="nav-link" href="index.html">VLI @ SUSS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="team.html">Our Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://github.com/suss-vli">Our GitHub</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="internship.html">Internship</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://suss-vli.github.io/faq">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://suss-ai.github.io/">AI for Good</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://learningservices.suss.edu.sg/">Learning
+                                Services</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-            <!-- Header-->
-            <div id="main-content">
-                <header class="py-5">
-                    <div class="container px-lg-5">
-                        <div class="p-4 p-lg-5 rounded-3 text-center">
-                            <div class="m-4 m-lg-5">
-                                <h1 class="display-1 fw-bold">Internship @ SUSS</h1>
-                                <p class="fs-1">Learn, Innovate, Excel</p>
-                                <a class="btn btn-primary btn-lg  my-1" href="https://suss-vli.github.io/">Home</a>
-                                <a class="btn btn-primary btn-lg my-1" href="http://github.com/suss-vli">Github</a>
-                                <a class="btn btn-primary btn-lg my-1" href="team.html">Our Team</a>
-                                <a class="btn btn-primary btn-lg  my-1" href="https://suss-ai.github.io/">AI for
-                                    Good</a>
-                                <a class="btn btn-primary btn-lg my-1" href="https://forms.gle/K7uTdbsbi5a7FAqP6">Apply
-                                    Here</a>
-                                <a class="btn btn-danger btn-lg  my-1"
-                                    href="https://learningservices.suss.edu.sg/">Learning Services</a>
-                            </div>
+    <main>
+        <p id="referral-message" style="display: none;"> </p>
+
+        <!-- Header-->
+        <div id="main-content">
+            <header class="py-5">
+                <div class="container px-lg-5">
+                    <div class="p-4 p-lg-5 rounded-3 text-center">
+                        <div class="m-4 m-lg-5">
+                            <h1 class="display-1 fw-bold">Internship @ SUSS</h1>
+                            <p class="fs-1">Learn, Innovate, Excel</p>
                         </div>
                     </div>
-                </header>
+                </div>
+            </header>
 
-                <div class="container marketing">
+            <div class="container marketing">
+                <div class="row featurette my-5">
+                    <div class="col text-center justify-content-center">
+                        <h2>Our Mission</h2>
+                        <p class="lead">
+                            Our mission is to train up local software engineers and build a vibrant tech talent pool
+                            in Singapore.
+                            We aim to contribute towards social good and work towards a better Singapore through
+                            innovative
+                            education and cutting-edge technology.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- START OF CAROUSEL -->
+                <div id="internCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <!-- FOR FUTURE USE -->
+                    <div class="carousel-indicators pt-4">
+                        <button type="button" data-bs-target="#internCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#internCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#internCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#internCarousel" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+
+                    <!-- <hr class="featurette-divider"> -->
                     <div class="row featurette my-5">
                         <div class="col text-center justify-content-center">
-                            <h2>Our Mission</h2>
-                            <p class="lead">
-                                Our mission is to train up local software engineers and build a vibrant tech talent pool
-                                in Singapore.
-                                We aim to contribute towards social good and work towards a better Singapore through
-                                innovative
-                                education and cutting-edge technology.
-                            </p>
+                            <h2>What Our Interns Say</h2>
+                        </div>
+                        <div class="carousel-inner my-5">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-lg-6 pb-3">
+                                        <img src="./images/interns/joey.jpg" class="rounded-circle" width="100"
+                                            height="100" aria-label="Joey" focusable="false">
+                                        <h4 class="fw-normal mt-3">Joey Tan</h4>
+                                        <p>SUSS Learning Services provided me with a transformative internship,
+                                            where supportive superiors and real-world IT industry exposure empowered
+                                            me to expand my
+                                            skills, knowledge, and professional growth.</p>
+
+                                        <!-- LinkedIn Button -->
+                                        <a href="https://www.linkedin.com/in/joey-tan-zuyi/" target="_blank"
+                                            class="btn btn-primary social-btn">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+
+                                        <!-- GitHub Button -->
+                                        <a href="https://github.com/jeezusplays" target="_blank"
+                                            class="btn btn-dark social-btn">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 pb-3">
+                                        <img src="./images/interns/bryan_c.jpg" class="rounded-circle" width="100"
+                                            height="100" aria-label="Bryan" focusable="false">
+                                        <h4 class="fw-normal mt-3">Bryan Chew</h4>
+                                        <p>At SUSS Learning Services, I am given the opportunity to work alongside
+                                            professionals who provide invaluable guidance and hands-on experience,
+                                            enabling me to
+                                            think critically, find
+                                            solutions, and continuously enhance my skills and knowledge.</p>
+
+                                        <!-- LinkedIn Button -->
+                                        <a href="https://www.linkedin.com/in/zhen-yi-chew-3b8669196/" target="_blank"
+                                            class="btn btn-primary social-btn">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+
+                                        <!-- GitHub Button -->
+                                        <a href="https://github.com/bchewzy" target="_blank"
+                                            class="btn btn-dark social-btn">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-6 pb-3">
+                                        <img src="./images/interns/sernyang.jpg" class="rounded-circle" width="100"
+                                            height="100" aria-label="Sern" focusable="false">
+                                        <h4 class="fw-normal mt-3">Sern Yang</h4>
+                                        <p>SUSS Learning Services offered a supportive space for me to develop
+                                            programming skills at my own pace. I was introduced to many innovative
+                                            ideas and professional software development techniques. I recommend an
+                                            internship here no matter your skill level, they will help you to
+                                            leverage your strengths while rounding out your weaknesses.</p>
+
+                                        <!-- LinkedIn Button -->
+                                        <a href="https://www.linkedin.com/in/sern-yang-tan" target="_blank"
+                                            class="btn btn-primary social-btn">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+
+                                        <!-- GitHub Button -->
+                                        <a href="https://github.com/tansernyang" target="_blank"
+                                            class="btn btn-dark social-btn">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 pb-3">
+                                        <img src="./images/interns/ethan.jpg" class="rounded-circle" width="100"
+                                            height="100" aria-label="Ethan" focusable="false">
+                                        <h4 class="fw-normal mt-3">Ethan Leo</h4>
+                                        <p>SUSS Learning Services offered a supportive space for me to develop
+                                            programming skills at my own pace. I was introduced to many innovative
+                                            ideas and professional software development techniques. I recommend an
+                                            internship here no matter your skill level, they will help you to
+                                            leverage your strengths while rounding out your weaknesses.</p>
+
+                                        <!-- LinkedIn Button -->
+                                        <a href="https://www.linkedin.com/in/mqleo/" target="_blank"
+                                            class="btn btn-primary social-btn">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+
+                                        <!-- GitHub Button -->
+                                        <a href="https://github.com/efhan-the-unorthodox" target="_blank"
+                                            class="btn btn-dark social-btn">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-6 pb-3">
+                                        <img src="./images/interns/chi.jpg" class="rounded-circle" width="100"
+                                            height="100" aria-label="Chi" focusable="false">
+                                        <h2 class="fw-normal mt-3">Chi</h2>
+                                        <p>The SUSS Learning Services internship has provided me with an environment
+                                            to hone my skills and knowledge, offering opportunities to learn from
+                                            excellent mentors and tackle real-life challenges.</p>
+
+                                        <!-- LinkedIn Button -->
+                                        <a href="https://www.linkedin.com/in/nguyen-le-cam-chi/" target="_blank"
+                                            class="btn btn-primary social-btn">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+
+                                        <!-- GitHub Button -->
+                                        <a href="https://github.com/nlcchi" target="_blank"
+                                            class="btn btn-dark social-btn">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 pb-3">
+                                        <img src="./images/interns/qistina.jpg" class="rounded-circle" width="100"
+                                            height="100" aria-label="Qistina" focusable="false">
+                                        <h4 class="fw-normal mt-3">Qistina Purnamasari</h4>
+                                        <p>SUSS learning services provided me with the opportunity to take on this
+                                            internship despite my limited programming knowledge. This experience
+                                            allowed me to gain confidence in programming through hands-on tasks and
+                                            real-world exposure. The support and mentorship from the team were
+                                            tremendously helpful, making the journey more meaningful.</p>
+
+                                        <!-- LinkedIn Button -->
+                                        <a href="https://www.linkedin.com/in/qistina-purnamasari/" target="_blank"
+                                            class="btn btn-primary social-btn">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+
+                                        <!-- GitHub Button -->
+                                        <a href="https://github.com/rsmnrp" target="_blank"
+                                            class="btn btn-dark social-btn">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-6 pb-3">
+                                        <img src="./images/interns/kejun.jfif" class="rounded-circle" width="100"
+                                            height="100" aria-label="Ke Jun" focusable="false">
+                                        <h4 class="fw-normal mt-3">Lim Ke Jun</h4>
+                                        <p>SUSS learning services was an enriching experience that helped to improve
+                                            my programming skills and broaden my knowledge on real world
+                                            applications. The mentorship and hands-on projects gave me the
+                                            opportunity to grow both professionally and personally, and I gained
+                                            valuable insights and knowledge about the industry. The positive work
+                                            culture at SUSS, coupled with their guidance and tutelage, made it a
+                                            fruitful and meaningful internship experience!</p>
+
+                                        <!-- LinkedIn Button -->
+                                        <a href="https://www.linkedin.com/in/limkejun/" target="_blank"
+                                            class="btn btn-primary social-btn">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+
+                                        <!-- GitHub Button -->
+                                        <a href="https://github.com/KeJun11" target="_blank"
+                                            class="btn btn-dark social-btn">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 pb-3">
+                                        <img src="./images/interns/ivyn.jfif" class="rounded-circle" width="100"
+                                            height="100" aria-label="Ivyn" focusable="false">
+                                        <h4 class="fw-normal mt-3">Ivyn Yak</h4>
+                                        <p>As a Software Engineer intern, I had the opportunity to work on projects
+                                            that expanded my technical skills. I have also been exposed to the
+                                            latest trends and discoveries in the AI field. Ultimately, this
+                                            experience has deepened my appreciation for the tech community,
+                                            solidifying my passion for software engineering.</p>
+
+                                        <!-- LinkedIn Button -->
+                                        <a href="https://www.linkedin.com/in/ivynyak/" target="_blank"
+                                            class="btn btn-primary social-btn">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+
+                                        <!-- GitHub Button -->
+                                        <a href="https://github.com/ivyn-yak" target="_blank"
+                                            class="btn btn-dark social-btn">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <!-- END OF CAROUSEL -->
 
-                    <!-- START OF CAROUSEL -->
-                    <div id="internCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <!-- FOR FUTURE USE -->
-                        <div class="carousel-indicators pt-4">
-                            <button type="button" data-bs-target="#internCarousel" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#internCarousel" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#internCarousel" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#internCarousel" data-bs-slide-to="3"
-                                aria-label="Slide 4"></button>
-                        </div>
-
-                        <!-- <hr class="featurette-divider"> -->
+                <!-- START THE FEATURETTES -->
+                <ul class="nav nav-tabs nav-fill flex-row" id="internTab" role="tablist">
+                    <li class="nav-item">
+                        <button class="nav-link active" id="about-tab" data-bs-toggle="tab"
+                            data-bs-target="#about-tab-pane" type="button" role="tab" aria-controls="about-tab-pane"
+                            aria-selected="true">About Our Internship</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="work-tab" data-bs-toggle="tab" data-bs-target="#work-tab-pane"
+                            type="button" role="tab" aria-controls="work-tab-pane" aria-selected="false">How We
+                            Work</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="hiring-tab" data-bs-toggle="tab" data-bs-target="#hiring-tab-pane"
+                            type="button" role="tab" aria-controls="hiring-tab-pane" aria-selected="false">Hiring
+                            Process</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="internTabContent">
+                    <!-- About Our Internship Start -->
+                    <div class="tab-pane fade show active" id="about-tab-pane" role="tabpanel"
+                        aria-labelledby="about-tab" tabindex="0">
                         <div class="row featurette my-5">
-                            <div class="col text-center justify-content-center">
-                                <h2>What Our Interns Say</h2>
+                            <div class="col-md-7 my-auto">
+                                <h2 class="featurette-heading fw-normal lh-1">Fun Learning Journey</h2>
+                                <h3 class="text-body-secondary fw-normal">Discover, Innovate, Grow </h3>
+
+                                <p class="lead">
+                                    Join us on an extraordinary internship journey of continuous learning and
+                                    exciting
+                                    discoveries. Be part of a supportive team that encourages innovation and growth,
+                                    as we
+                                    develop cutting-edge tools and solutions shaping the future of programming
+                                    education.
+                                    Your contribution can impact our future.
+                                </p>
                             </div>
-                            <div class="carousel-inner my-5">
-                                <div class="carousel-item active">
-                                    <div class="row">
-                                        <div class="col-lg-6 pb-3">
-                                            <img src="./images/interns/joey.jpg" class="rounded-circle" width="100"
-                                                height="100" aria-label="Joey" focusable="false">
-                                            <h4 class="fw-normal mt-3">Joey Tan</h4>
-                                            <p>SUSS Learning Services provided me with a transformative internship,
-                                                where supportive superiors and real-world IT industry exposure empowered
-                                                me to expand my
-                                                skills, knowledge, and professional growth.</p>
-
-                                            <!-- LinkedIn Button -->
-                                            <a href="https://www.linkedin.com/in/joey-tan-zuyi/" target="_blank"
-                                                class="btn btn-primary social-btn">
-                                                <i class="bi bi-linkedin"></i>
-                                            </a>
-
-                                            <!-- GitHub Button -->
-                                            <a href="https://github.com/jeezusplays" target="_blank"
-                                                class="btn btn-dark social-btn">
-                                                <i class="bi bi-github"></i>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-6 pb-3">
-                                            <img src="./images/interns/bryan_c.jpg" class="rounded-circle" width="100"
-                                                height="100" aria-label="Bryan" focusable="false">
-                                            <h4 class="fw-normal mt-3">Bryan Chew</h4>
-                                            <p>At SUSS Learning Services, I am given the opportunity to work alongside
-                                                professionals who provide invaluable guidance and hands-on experience,
-                                                enabling me to
-                                                think critically, find
-                                                solutions, and continuously enhance my skills and knowledge.</p>
-
-                                            <!-- LinkedIn Button -->
-                                            <a href="https://www.linkedin.com/in/zhen-yi-chew-3b8669196/"
-                                                target="_blank" class="btn btn-primary social-btn">
-                                                <i class="bi bi-linkedin"></i>
-                                            </a>
-
-                                            <!-- GitHub Button -->
-                                            <a href="https://github.com/bchewzy" target="_blank"
-                                                class="btn btn-dark social-btn">
-                                                <i class="bi bi-github"></i>
-                                            </a>
-                                        </div>
-                                    </div>
+                            <div class="col-md-5 ">
+                                <div>
+                                    <img src="./images/interns/innovate.jpg" class="img-fluid img-responsive mx-auto"
+                                        width="500" height="500">
                                 </div>
+                            </div>
+                        </div>
 
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-lg-6 pb-3">
-                                            <img src="./images/interns/sernyang.jpg" class="rounded-circle" width="100"
-                                                height="100" aria-label="Sern" focusable="false">
-                                            <h4 class="fw-normal mt-3">Sern Yang</h4>
-                                            <p>SUSS Learning Services offered a supportive space for me to develop
-                                                programming skills at my own pace. I was introduced to many innovative
-                                                ideas and professional software development techniques. I recommend an
-                                                internship here no matter your skill level, they will help you to
-                                                leverage your strengths while rounding out your weaknesses.</p>
+                        <hr class="featurette-divider">
 
-                                            <!-- LinkedIn Button -->
-                                            <a href="https://www.linkedin.com/in/sern-yang-tan" target="_blank"
-                                                class="btn btn-primary social-btn">
-                                                <i class="bi bi-linkedin"></i>
-                                            </a>
-
-                                            <!-- GitHub Button -->
-                                            <a href="https://github.com/tansernyang" target="_blank"
-                                                class="btn btn-dark social-btn">
-                                                <i class="bi bi-github"></i>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-6 pb-3">
-                                            <img src="./images/interns/ethan.jpg" class="rounded-circle" width="100"
-                                                height="100" aria-label="Ethan" focusable="false">
-                                            <h4 class="fw-normal mt-3">Ethan Leo</h4>
-                                            <p>SUSS Learning Services offered a supportive space for me to develop
-                                                programming skills at my own pace. I was introduced to many innovative
-                                                ideas and professional software development techniques. I recommend an
-                                                internship here no matter your skill level, they will help you to
-                                                leverage your strengths while rounding out your weaknesses.</p>
-
-                                            <!-- LinkedIn Button -->
-                                            <a href="https://www.linkedin.com/in/mqleo/" target="_blank"
-                                                class="btn btn-primary social-btn">
-                                                <i class="bi bi-linkedin"></i>
-                                            </a>
-
-                                            <!-- GitHub Button -->
-                                            <a href="https://github.com/efhan-the-unorthodox" target="_blank"
-                                                class="btn btn-dark social-btn">
-                                                <i class="bi bi-github"></i>
-                                            </a>
-                                        </div>
-                                    </div>
+                        <div class="row featurette my-5">
+                            <div class="col-md-7 order-md-2 my-auto">
+                                <h2 class="featurette-heading fw-normal lh-1">Gain Work-Life Balance</h2>
+                                <h3 class="text-body-secondary fw-normal">Thrive with Remote Work </h3>
+                                <p class="lead">
+                                    Experience the full potential of remote engineering internships with us, where
+                                    flexibility reigns. Embrace the freedom to create and contribute to
+                                    meaningful projects from the comfort of your own space. We trust in your
+                                    capabilities,
+                                    and seek to empower higher bursts of productivity.
+                                </p>
+                            </div>
+                            <div class="col-md-5 order-md-1">
+                                <div>
+                                    <img src="./images/interns/remote_work.jpg" class="img-fluid img-responsive mx-auto"
+                                        width="500" height="500">
                                 </div>
+                            </div>
+                        </div>
 
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-lg-6 pb-3">
-                                            <img src="./images/interns/chi.jpg" class="rounded-circle" width="100"
-                                                height="100" aria-label="Chi" focusable="false">
-                                            <h2 class="fw-normal mt-3">Chi</h2>
-                                            <p>The SUSS Learning Services internship has provided me with an environment
-                                                to hone my skills and knowledge, offering opportunities to learn from
-                                                excellent mentors and tackle real-life challenges.</p>
+                        <hr class="featurette-divider">
 
-                                            <!-- LinkedIn Button -->
-                                            <a href="https://www.linkedin.com/in/nguyen-le-cam-chi/" target="_blank"
-                                                class="btn btn-primary social-btn">
-                                                <i class="bi bi-linkedin"></i>
-                                            </a>
+                        <div class="row featurette my-5">
+                            <div class="col-md-7 my-auto">
+                                <h2 class="featurette-heading fw-normal lh-1">Project Exposure </h2>
+                                <h3 class="text-body-secondary fw-normal">Industrial Tools, Full-Stack Solutions,
+                                    DevOps </h3>
 
-                                            <!-- GitHub Button -->
-                                            <a href="https://github.com/nlcchi" target="_blank"
-                                                class="btn btn-dark social-btn">
-                                                <i class="bi bi-github"></i>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-6 pb-3">
-                                            <img src="./images/interns/qistina.jpg" class="rounded-circle" width="100"
-                                                height="100" aria-label="Qistina" focusable="false">
-                                            <h4 class="fw-normal mt-3">Qistina Purnamasari</h4>
-                                            <p>SUSS learning services provided me with the opportunity to take on this
-                                                internship despite my limited programming knowledge. This experience
-                                                allowed me to gain confidence in programming through hands-on tasks and
-                                                real-world exposure. The support and mentorship from the team were
-                                                tremendously helpful, making the journey more meaningful.</p>
-
-                                            <!-- LinkedIn Button -->
-                                            <a href="https://www.linkedin.com/in/qistina-purnamasari/" target="_blank"
-                                                class="btn btn-primary social-btn">
-                                                <i class="bi bi-linkedin"></i>
-                                            </a>
-
-                                            <!-- GitHub Button -->
-                                            <a href="https://github.com/rsmnrp" target="_blank"
-                                                class="btn btn-dark social-btn">
-                                                <i class="bi bi-github"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-lg-6 pb-3">
-                                            <img src="./images/interns/kejun.jfif" class="rounded-circle" width="100"
-                                                height="100" aria-label="Ke Jun" focusable="false">
-                                            <h4 class="fw-normal mt-3">Lim Ke Jun</h4>
-                                            <p>SUSS learning services was an enriching experience that helped to improve
-                                                my programming skills and broaden my knowledge on real world
-                                                applications. The mentorship and hands-on projects gave me the
-                                                opportunity to grow both professionally and personally, and I gained
-                                                valuable insights and knowledge about the industry. The positive work
-                                                culture at SUSS, coupled with their guidance and tutelage, made it a
-                                                fruitful and meaningful internship experience!</p>
-
-                                            <!-- LinkedIn Button -->
-                                            <a href="https://www.linkedin.com/in/limkejun/" target="_blank"
-                                                class="btn btn-primary social-btn">
-                                                <i class="bi bi-linkedin"></i>
-                                            </a>
-
-                                            <!-- GitHub Button -->
-                                            <a href="https://github.com/KeJun11" target="_blank"
-                                                class="btn btn-dark social-btn">
-                                                <i class="bi bi-github"></i>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-6 pb-3">
-                                            <img src="./images/interns/ivyn.jfif" class="rounded-circle" width="100"
-                                                height="100" aria-label="Ivyn" focusable="false">
-                                            <h4 class="fw-normal mt-3">Ivyn Yak</h4>
-                                            <p>As a Software Engineer intern, I had the opportunity to work on projects
-                                                that expanded my technical skills. I have also been exposed to the
-                                                latest trends and discoveries in the AI field. Ultimately, this
-                                                experience has deepened my appreciation for the tech community,
-                                                solidifying my passion for software engineering.</p>
-
-                                            <!-- LinkedIn Button -->
-                                            <a href="https://www.linkedin.com/in/ivynyak/" target="_blank"
-                                                class="btn btn-primary social-btn">
-                                                <i class="bi bi-linkedin"></i>
-                                            </a>
-
-                                            <!-- GitHub Button -->
-                                            <a href="https://github.com/ivyn-yak" target="_blank"
-                                                class="btn btn-dark social-btn">
-                                                <i class="bi bi-github"></i>
-                                            </a>
-                                        </div>
-                                    </div>
+                                <p class="lead">
+                                    Immerse yourself in real-world, meaningful, and fun tech projects where you'll
+                                    gain
+                                    hands-on experience with Industrial Tools, Full-Stack Solutions, and DevOps,
+                                    guided by
+                                    technical mentors.
+                                </p>
+                            </div>
+                            <div class="col-md-5">
+                                <div>
+                                    <img src="./images/interns/reward.jpg" class="img-fluid img-responsive mx-auto"
+                                        width="500" height="500">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- END OF CAROUSEL -->
+                    <!-- About Our Internship End -->
 
-                    <!-- START THE FEATURETTES -->
-                    <ul class="nav nav-tabs nav-fill flex-row" id="internTab" role="tablist">
-                        <li class="nav-item">
-                            <button class="nav-link active" id="about-tab" data-bs-toggle="tab"
-                                data-bs-target="#about-tab-pane" type="button" role="tab" aria-controls="about-tab-pane"
-                                aria-selected="true">About Our Internship</button>
-                        </li>
-                        <li class="nav-item">
-                            <button class="nav-link" id="work-tab" data-bs-toggle="tab" data-bs-target="#work-tab-pane"
-                                type="button" role="tab" aria-controls="work-tab-pane" aria-selected="false">How We
-                                Work</button>
-                        </li>
-                        <li class="nav-item">
-                            <button class="nav-link" id="hiring-tab" data-bs-toggle="tab"
-                                data-bs-target="#hiring-tab-pane" type="button" role="tab"
-                                aria-controls="hiring-tab-pane" aria-selected="false">Hiring Process</button>
-                        </li>
+                    <!-- How We Work Start -->
+                    <div class="tab-pane fade" id="work-tab-pane" role="tabpanel" aria-labelledby="work-tab"
+                        tabindex="1">
+                        <div class="row featurette">
+                            <div class="col my-5">
+                                <h2>Overview </h2>
+                                <p class="lead">
+                                    We empower the future of education through innovative online initiatives,
+                                    cutting-edge pedagogies, and state-of-the-art learning technologies. We need
+                                    people who want to play a vital role in delivering high-quality academic
+                                    programs and co-creating an exceptional digital learning experience for our
+                                    students.
+
+                                    We are excited about the impact our work can have on students' lives and seek
+                                    individuals who share our passion for learning and growth. Here at SUSS VLI, we
+                                    value the DevOps characteristics of adaptability and continuous improvement,
+                                    encouraging our team to grow in unprecedented ways and challenge the boundaries
+                                    of
+                                    innovation.
+
+                                    We foster a collaborative environment that values creativity and encourages
+                                    everyone to contribute to impactful solutions. Mistakes are seen as valuable
+                                    learning opportunities. Failure is embraced to promote progress and resilience.
+
+                                    Join us, and help revolutionize the way students learn and grow in the digital
+                                    age!
+                                </p>
+                            </div>
+                        </div>
+
+                        <hr class="featurette-divider">
+                        <div class="row featurette">
+                            <div class="col my-5">
+                                <h2>How We Work </h2>
+                                <p class="lead">
+                                    At SUSS VLI, we are change-makers, innovating for impactful education. Speak up,
+                                    deconstruct challenges, and co-create solutions with us. We embrace a culture of
+                                    continuous learning and growth, providing vast
+                                    opportunities to expand your horizons. Our team comprises technical experts,
+                                    creating a collaborative environment where knowledge sharing is encouraged.
+                                    <br><br>
+                                    We prioritize creating a positive workspace, encouraging collaboration and
+                                    innovation, fostering a healthy and supportive atmosphere. Embracing a vibrant
+                                    and inclusive culture is an integral part of being a member of the SUSS VLI
+                                    team.
+                                    <br><br>
+                                    We prioritize your well-being with flexible work arrangements and generous leave
+                                    benefits, supporting a balanced work and family life. Embrace the freedom to
+                                    work from home or engage in physical activities as needed. We believe that
+                                    productivity thrives when you have the autonomy to choose where and how you work
+                                    best. Trusting in your capabilities, we empower you to excel in your role, no
+                                    matter where you are. Join our team and experience the benefits of a supportive
+                                    and adaptable work environment – apply now!
+                                </p>
+                            </div>
+                        </div>
+
+                        <hr class="featurette-divider">
+                        <div class="row featurette">
+                            <div class="col my-5">
+                                <h2>What You Can Contribute </h2>
+                                <p class="lead">
+                                    As an engineering intern at SUSS VLI, you'll embark on an exciting journey of
+                                    impactful contributions. With hands-on experience in <b>Full-Stack projects</b>
+                                    encompassing Python and JavaScript, you'll be at the forefront of developing
+                                    cutting-edge solutions that power the future of education. Dive into the world
+                                    of <b>DevOps Pipeline and Infrastructure</b>, where you'll optimize and
+                                    streamline our processes, ensuring seamless delivery of educational initiatives.
+                                    Additionally,
+                                    explore <b>Analytics and Data-related work</b>, extracting valuable insights to
+                                    enhance
+                                    the learning experience for our students.
+                                    <br><br>
+                                    By joining SUSS VLI, you'll co-create innovative solutions and play a vital role
+                                    in shaping the landscape of education, leaving a lasting impact on our students
+                                    and the community. Embrace this opportunity to grow and thrive as a dynamic
+                                    engineering intern, contributing to meaningful projects that make a difference.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- How We Work End -->
+
+                    <!-- Hiring Process Start -->
+                    <div class="tab-pane fade" id="hiring-tab-pane" role="tabpanel" aria-labelledby="hiring-tab"
+                        tabindex="2">
+                        <div class="row featurette">
+                            <div class="col my-5">
+                                <h2>Our Hiring Process</h2>
+                                <p class="lead">
+                                    We are seeking individuals who share our excitement and passion for building the
+                                    future of education. To find these exceptional candidates, we prioritize hiring
+                                    right. This means focusing on identifying and selecting the most suitable
+                                    individuals who not only possess the required technical abilities but also align
+                                    with our company's values, goals, and work culture.
+                                    <br><br>
+                                    To prepare you for our hiring process, we want to provide you with some valuable
+                                    tips and details on how to shine during the application process. By following
+                                    these guidelines, you can ensure that we don't miss out on hiring the right
+                                    person for our team. Your unique qualities and skills will play a vital role in
+                                    shaping the future of education together at SUSS VLI.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <hr class="featurette-divider">
+                        <div class="row featurette">
+                            <div class="col my-5">
+                                <h3>Creating your CV </h3>
+                                <ul class="text-body-secondary">
+                                    <li>Ensure that your CV is simple and easy to read. Use a clean format.</li>
+                                    <li>Showcase any accomplishment or projects. </li>
+                                    <li>If you are confident with your craft, please feel free to state them in your
+                                        CV.</li>
+                                    <li>If you have a GitHub or Hugging Face account, please include them in your
+                                        CV. </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row featurette">
+                            <div class="col">
+                                <h3>Application and Interview Process </h3>
+                                <ol class="text-body-secondary">
+                                    <li>Apply and submit your CV <a href="https://forms.gle/K7uTdbsbi5a7FAqP6">here</a>
+                                        <!-- <li>Apply and submit your CV <del href="https://forms.gle/K7uTdbsbi5a7FAqP6">here.</del> Sorry! Applications are closed. Please check back next time!</li> -->
+                                    <li>Zoom Interview (30 - 45 minutes): We may ask you questions about your coding
+                                        project.</li>
+                                    <li><i>Optional</i>: Take Home Coding Project (3 - 5 hours)</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="row featurette">
+                            <div class="col my-5">
+                                <h3>Eligibility Criteria and Qualifications </h3>
+                                <ul class="text-body-secondary">
+                                    <li>Pursuing or recently completed a degree in Computer Science, Software
+                                        Engineering, Information Systems, or a related field. </li>
+                                    <li>Basic Technical Competencies (Python, JavaScript...) </li>
+                                    <li>Familiarity with Software Development Tools (e.g. Git, Visual Studio Code)
+                                    </li>
+                                    <li>Thinking and Analytics Skills to problem solve. </li>
+                                    <li>Willingness to learn and make mistakes </li>
+                                </ul>
+
+                                <p class="lead">If you are ready to join us, apply now. Good luck!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hiring Process End -->
+                </div>
+                <!-- /END THE FEATURETTES -->
+                <hr class="featurette-divider">
+
+                <!-- START OF FORM SECTION -->
+                <div class="row featurette my-5" id="apply">
+                    <div class="col text-center justify-content-center">
+                        <h2 class="featurette-heading fw-normal">Apply Here</h2>
+                        <p>If you are interested to apply for the internship, click <a
+                                href="https://forms.gle/ZERMMxDyGp7sUx3D9">here</a></p>
+                        <!-- <p>If you are interested to apply for the internship, click <del>here.</del> Sorry! Applications are closed. Please check back next time! -->
+                    </div>
+                </div>
+                <!-- END OF FORM SECTION -->
+
+            </div><!-- /.container -->
+        </div>
+
+        <!-- Back to top button -->
+        <button type="button" class="btn btn-secondary btn-floating btn-lg " id="btn-back-to-top">
+            <span class="bi bi-arrow-up"></span>
+        </button>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <div class="row text-white">
+                <div class="col-6 col-md">
+                    <h5>VLI @ SUSS</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary text-decoration-none" href="#whatwedo">What We Do</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="#mission">Our Mission</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="team.html">Our Team</a></li>
                     </ul>
-                    <div class="tab-content" id="internTabContent">
-                        <!-- About Our Internship Start -->
-                        <div class="tab-pane fade show active" id="about-tab-pane" role="tabpanel"
-                            aria-labelledby="about-tab" tabindex="0">
-                            <div class="row featurette my-5">
-                                <div class="col-md-7 my-auto">
-                                    <h2 class="featurette-heading fw-normal lh-1">Fun Learning Journey</h2>
-                                    <h3 class="text-body-secondary fw-normal">Discover, Innovate, Grow </h3>
+                </div>
+                <div class="col-6 col-md">
+                    <h5><br></h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary text-decoration-none" href="#products">Products and Services</a>
+                        </li>
+                        <li><a class="link-secondary text-decoration-none" href="">GitHub</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="internship.html">Internship</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Others</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary text-decoration-none" href="#">FAQ</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="#">AI for Good</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="#">Learning Services</a></li>
+                    </ul>
+                </div>
 
-                                    <p class="lead">
-                                        Join us on an extraordinary internship journey of continuous learning and
-                                        exciting
-                                        discoveries. Be part of a supportive team that encourages innovation and growth,
-                                        as we
-                                        develop cutting-edge tools and solutions shaping the future of programming
-                                        education.
-                                        Your contribution can impact our future.
-                                    </p>
-                                </div>
-                                <div class="col-md-5 ">
-                                    <div>
-                                        <img src="./images/interns/innovate.jpg"
-                                            class="img-fluid img-responsive mx-auto" width="500" height="500">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <hr class="featurette-divider">
-
-                            <div class="row featurette my-5">
-                                <div class="col-md-7 order-md-2 my-auto">
-                                    <h2 class="featurette-heading fw-normal lh-1">Gain Work-Life Balance</h2>
-                                    <h3 class="text-body-secondary fw-normal">Thrive with Remote Work </h3>
-                                    <p class="lead">
-                                        Experience the full potential of remote engineering internships with us, where
-                                        flexibility reigns. Embrace the freedom to create and contribute to
-                                        meaningful projects from the comfort of your own space. We trust in your
-                                        capabilities,
-                                        and seek to empower higher bursts of productivity.
-                                    </p>
-                                </div>
-                                <div class="col-md-5 order-md-1">
-                                    <div>
-                                        <img src="./images/interns/remote_work.jpg"
-                                            class="img-fluid img-responsive mx-auto" width="500" height="500">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <hr class="featurette-divider">
-
-                            <div class="row featurette my-5">
-                                <div class="col-md-7 my-auto">
-                                    <h2 class="featurette-heading fw-normal lh-1">Project Exposure </h2>
-                                    <h3 class="text-body-secondary fw-normal">Industrial Tools, Full-Stack Solutions,
-                                        DevOps </h3>
-
-                                    <p class="lead">
-                                        Immerse yourself in real-world, meaningful, and fun tech projects where you'll
-                                        gain
-                                        hands-on experience with Industrial Tools, Full-Stack Solutions, and DevOps,
-                                        guided by
-                                        technical mentors.
-                                    </p>
-                                </div>
-                                <div class="col-md-5">
-                                    <div>
-                                        <img src="./images/interns/reward.jpg" class="img-fluid img-responsive mx-auto"
-                                            width="500" height="500">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- About Our Internship End -->
-
-                        <!-- How We Work Start -->
-                        <div class="tab-pane fade" id="work-tab-pane" role="tabpanel" aria-labelledby="work-tab"
-                            tabindex="1">
-                            <div class="row featurette">
-                                <div class="col my-5">
-                                    <h2>Overview </h2>
-                                    <p class="lead">
-                                        We empower the future of education through innovative online initiatives,
-                                        cutting-edge pedagogies, and state-of-the-art learning technologies. We need
-                                        people who want to play a vital role in delivering high-quality academic
-                                        programs and co-creating an exceptional digital learning experience for our
-                                        students.
-
-                                        We are excited about the impact our work can have on students' lives and seek
-                                        individuals who share our passion for learning and growth. Here at SUSS VLI, we
-                                        value the DevOps characteristics of adaptability and continuous improvement,
-                                        encouraging our team to grow in unprecedented ways and challenge the boundaries
-                                        of
-                                        innovation.
-
-                                        We foster a collaborative environment that values creativity and encourages
-                                        everyone to contribute to impactful solutions. Mistakes are seen as valuable
-                                        learning opportunities. Failure is embraced to promote progress and resilience.
-
-                                        Join us, and help revolutionize the way students learn and grow in the digital
-                                        age!
-                                    </p>
-                                </div>
-                            </div>
-
-                            <hr class="featurette-divider">
-                            <div class="row featurette">
-                                <div class="col my-5">
-                                    <h2>How We Work </h2>
-                                    <p class="lead">
-                                        At SUSS VLI, we are change-makers, innovating for impactful education. Speak up,
-                                        deconstruct challenges, and co-create solutions with us. We embrace a culture of
-                                        continuous learning and growth, providing vast
-                                        opportunities to expand your horizons. Our team comprises technical experts,
-                                        creating a collaborative environment where knowledge sharing is encouraged.
-                                        <br><br>
-                                        We prioritize creating a positive workspace, encouraging collaboration and
-                                        innovation, fostering a healthy and supportive atmosphere. Embracing a vibrant
-                                        and inclusive culture is an integral part of being a member of the SUSS VLI
-                                        team.
-                                        <br><br>
-                                        We prioritize your well-being with flexible work arrangements and generous leave
-                                        benefits, supporting a balanced work and family life. Embrace the freedom to
-                                        work from home or engage in physical activities as needed. We believe that
-                                        productivity thrives when you have the autonomy to choose where and how you work
-                                        best. Trusting in your capabilities, we empower you to excel in your role, no
-                                        matter where you are. Join our team and experience the benefits of a supportive
-                                        and adaptable work environment – apply now!
-                                    </p>
-                                </div>
-                            </div>
-
-                            <hr class="featurette-divider">
-                            <div class="row featurette">
-                                <div class="col my-5">
-                                    <h2>What You Can Contribute </h2>
-                                    <p class="lead">
-                                        As an engineering intern at SUSS VLI, you'll embark on an exciting journey of
-                                        impactful contributions. With hands-on experience in <b>Full-Stack projects</b>
-                                        encompassing Python and JavaScript, you'll be at the forefront of developing
-                                        cutting-edge solutions that power the future of education. Dive into the world
-                                        of <b>DevOps Pipeline and Infrastructure</b>, where you'll optimize and
-                                        streamline our processes, ensuring seamless delivery of educational initiatives.
-                                        Additionally,
-                                        explore <b>Analytics and Data-related work</b>, extracting valuable insights to
-                                        enhance
-                                        the learning experience for our students.
-                                        <br><br>
-                                        By joining SUSS VLI, you'll co-create innovative solutions and play a vital role
-                                        in shaping the landscape of education, leaving a lasting impact on our students
-                                        and the community. Embrace this opportunity to grow and thrive as a dynamic
-                                        engineering intern, contributing to meaningful projects that make a difference.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- How We Work End -->
-
-                        <!-- Hiring Process Start -->
-                        <div class="tab-pane fade" id="hiring-tab-pane" role="tabpanel" aria-labelledby="hiring-tab"
-                            tabindex="2">
-                            <div class="row featurette">
-                                <div class="col my-5">
-                                    <h2>Our Hiring Process</h2>
-                                    <p class="lead">
-                                        We are seeking individuals who share our excitement and passion for building the
-                                        future of education. To find these exceptional candidates, we prioritize hiring
-                                        right. This means focusing on identifying and selecting the most suitable
-                                        individuals who not only possess the required technical abilities but also align
-                                        with our company's values, goals, and work culture.
-                                        <br><br>
-                                        To prepare you for our hiring process, we want to provide you with some valuable
-                                        tips and details on how to shine during the application process. By following
-                                        these guidelines, you can ensure that we don't miss out on hiring the right
-                                        person for our team. Your unique qualities and skills will play a vital role in
-                                        shaping the future of education together at SUSS VLI.
-                                    </p>
-                                </div>
-                            </div>
-
-
-                            <hr class="featurette-divider">
-                            <div class="row featurette">
-                                <div class="col my-5">
-                                    <h3>Creating your CV </h3>
-                                    <ul class="text-body-secondary">
-                                        <li>Ensure that your CV is simple and easy to read. Use a clean format.</li>
-                                        <li>Showcase any accomplishment or projects. </li>
-                                        <li>If you are confident with your craft, please feel free to state them in your
-                                            CV.</li>
-                                        <li>If you have a GitHub or Hugging Face account, please include them in your
-                                            CV. </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="row featurette">
-                                <div class="col">
-                                    <h3>Application and Interview Process </h3>
-                                    <ol class="text-body-secondary">
-                                        <li>Apply and submit your CV <a
-                                                href="https://forms.gle/K7uTdbsbi5a7FAqP6">here</a>
-                                            <!-- <li>Apply and submit your CV <del href="https://forms.gle/K7uTdbsbi5a7FAqP6">here.</del> Sorry! Applications are closed. Please check back next time!</li> -->
-                                        <li>Zoom Interview (30 - 45 minutes): We may ask you questions about your coding
-                                            project.</li>
-                                        <li><i>Optional</i>: Take Home Coding Project (3 - 5 hours)</li>
-                                    </ol>
-                                </div>
-                            </div>
-
-                            <div class="row featurette">
-                                <div class="col my-5">
-                                    <h3>Eligibility Criteria and Qualifications </h3>
-                                    <ul class="text-body-secondary">
-                                        <li>Pursuing or recently completed a degree in Computer Science, Software
-                                            Engineering, Information Systems, or a related field. </li>
-                                        <li>Basic Technical Competencies (Python, JavaScript...) </li>
-                                        <li>Familiarity with Software Development Tools (e.g. Git, Visual Studio Code)
-                                        </li>
-                                        <li>Thinking and Analytics Skills to problem solve. </li>
-                                        <li>Willingness to learn and make mistakes </li>
-                                    </ul>
-
-                                    <p class="lead">If you are ready to join us, apply now. Good luck!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Hiring Process End -->
-                    </div>
-                    <!-- /END THE FEATURETTES -->
-                    <hr class="featurette-divider">
-
-                    <!-- START OF FORM SECTION -->
-                    <div class="row featurette my-5" id="apply">
-                        <div class="col text-center justify-content-center">
-                            <h2 class="featurette-heading fw-normal">Apply Here</h2>
-                            <p>If you are interested to apply for the internship, click <a
-                                    href="https://forms.gle/ZERMMxDyGp7sUx3D9">here</a></p>
-                            <!-- <p>If you are interested to apply for the internship, click <del>here.</del> Sorry! Applications are closed. Please check back next time! -->
-                        </div>
-                    </div>
-                    <!-- END OF FORM SECTION -->
-
-                </div><!-- /.container -->
+                <div class="col-12 col-md">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img"
+                        viewBox="0 0 24 24">
+                        <title>Product</title>
+                        <circle cx="12" cy="12" r="10" />
+                        <path
+                            d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
+                    </svg> -->
+                    <p class="d-block mb-3 text-white">Copyright &copy; VLI@SUSS 2018 -
+                        <script>document.write(new Date().getFullYear());</script>. v0.1.0.alpha1
+                    </p>
+                </div>
             </div>
-
-            <!-- Back to top button -->
-            <button type="button" class="btn btn-secondary btn-floating btn-lg " id="btn-back-to-top">
-                <span class="bi bi-arrow-up"></span>
-            </button>
-        </main>
-
-        <!-- FOOTER -->
-        <footer id="sticky-footer" class="py-3 bg-dark">
-            <div class="container">
-                <p class="m-0 text-center text-white">Copyright &copy; VLI@SUSS 2018 -
-                    <script>document.write(new Date().getFullYear());</script>. v0.1.0.alpha1
-                </p>
-            </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

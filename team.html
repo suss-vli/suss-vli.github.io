@@ -2,19 +2,21 @@
 <html lang="en">
 
 <head>
+    <!-- <script src="../assets/js/color-modes.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
     <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta property="og:title" content="VLI Team @ SUSS" />
+    <meta property="og:title" content="VLI @ SUSS" />
     <meta property="og:image" content="https://suss-vli.github.io/images/suss.jpg" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="The VLI Team at SUSS" />
-    <meta property="og:url" content="https://suss-vli.github.io/team" />
+    <meta property="og:description" content="VLI is VLI Lab Infrastructure of SUSS" />
+    <meta property="og:url" content="https://suss-vli.github.io/" />
 
     <!-- Twitter-specific Open Graph tags -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="VLI Team @ SUSS">
+    <meta name="twitter:title" content="VLI @ SUSS">
     <meta property="twitter:image" content="https://suss-vli.github.io/images/suss.png" />
-    <meta name="twitter:description" content="The VLI Team at SUSS">
+    <meta name="twitter:description" content="VLI is VLI Lab Infrastructure of SUSS">
 
     <title>VLI @ SUSS</title>
 
@@ -49,273 +51,411 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/wiggle.css" rel="stylesheet" />
     <link href="css/btn_back_to_top.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+        }
+
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
+
+        .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important;
+        }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="css/product.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="outer">
-        <main class="content">
-
-            <!-- Header-->
-            <header class="py-5" id="vanta" style="min-height: 576px;">
-                <div class="container px-lg-5">
-                    <div class="p-4 p-lg-5 rounded-3 text-center">
-                        <div class="m-4 m-lg-5">
-                            <h1 class="display-1 fw-bold">VLI @ SUSS</h1>
-                            <p class="fs-1"> Our Team</p>
-                            <!-- <div class="d-grid gap-2 d-md-block"> -->
-                            <a class="btn btn-primary btn-lg  my-1" href="https://suss-vli.github.io/">Home</a>
-                            <a class="btn btn-primary btn-lg my-1" href="http://github.com/suss-vli">Github</a>
-                            <a class="btn btn-primary btn-lg my-1"
-                                href="https://suss-vli.github.io/internship">Internship</a>
-                            <a class="btn btn-primary btn-lg my-1" href="http://suss-vli.github.io/faq">Student
-                                Guide/FAQ</a>
-                            <a class="btn btn-primary btn-lg  my-1" href="https://suss-ai.github.io/">AI for Good</a>
-                            <a class="btn btn-danger btn-lg  my-1" href="https://learningservices.suss.edu.sg/">Learning
-                                Services</a>
-                            <!-- </div> -->
-                        </div>
-                    </div>
-                </div>
-            </header>
-
-            <!-- Team Section -->
-            <section class="pt-2">
-                <div class="container px-lg-5">
-                    <!-- <h2 class="fs-2 fw-bold">Team</h2> -->
-                    <div class="row gx-lg-5 justify-content-md-center">
-                        <div class="col-lg-4 col-md-5 mb-5">
-                            <div class="card border-0 h-100">
-                                <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0 text-center">
-                                    <img src="./images/team/bryan.jpg" alt="Bryan" class="rounded-circle mb-3"
-                                        width="150">
-                                    <h3 class="fs-4 fw-normal">Bryan</h3>
-                                    <p>Core Team <br><a href="mailto:bryanlimyt@suss.edu.sg">bryanlimyt@suss.edu.sg</a>
-                                    </p>
-                                    <!-- LinkedIn Button -->
-                                    <a href="https://www.linkedin.com/in/ytbryan1/" target="_blank"
-                                        class="btn btn-primary social-btn">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-
-                                    <!-- GitHub Button -->
-                                    <a href="https://github.com/ytbryan" target="_blank"
-                                        class="btn btn-dark social-btn">
-                                        <i class="bi bi-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-5 mb-5">
-                            <div class="card border-0 h-100">
-                                <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0 text-center">
-                                    <img src="./images/team/jane.jpg" alt="Jane" class="rounded-circle mb-3"
-                                        width="150">
-                                    <h3 class="fs-4 fw-normal">Jane (Azzahra) Tan</h3>
-                                    <p>Core Team <br><a href="mailto:janetanjy@suss.edu.sg">janetanjy@suss.edu.sg</a>
-                                    </p>
-                                    <!-- LinkedIn Button -->
-                                    <a href="https://www.linkedin.com/in/azzahra-durra-tan-jing-yi-jane/"
-                                        target="_blank" class="btn btn-primary social-btn">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-
-                                    <!-- GitHub Button -->
-                                    <a href="https://github.com/azzahrajanetan" target="_blank"
-                                        class="btn btn-dark social-btn">
-                                        <i class="bi bi-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-5 mb-5">
-                            <div class="card border-0 h-100">
-                                <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0 text-center">
-                                    <img src="./images/interns/brandon.png" alt="Brandon" class="rounded-circle mb-3"
-                                        width="150">
-                                    <h3 class="fs-4 fw-normal">Brandon Voon</h3>
-                                    <p>Core Team <br><a
-                                            href="mailto:brandonvoonys@suss.edu.sg">brandonvoonys@suss.edu.sg</a></p>
-                                    <!-- LinkedIn Button -->
-                                    <a href="https://www.linkedin.com/in/brandon-voon" target="_blank"
-                                        class="btn btn-primary social-btn">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-
-                                    <!-- GitHub Button -->
-                                    <a href="https://github.com/vysky" target="_blank" class="btn btn-dark social-btn">
-                                        <i class="bi bi-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-5 mb-5">
-                            <div class="card border-0 h-100">
-                                <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0 text-center">
-                                    <img src="./images/team/adeline.jpg" alt="Adeline" class="rounded-circle mb-3"
-                                        width="150">
-                                    <h3 class="fs-4 fw-normal">Adeline Loh</h3>
-                                    <p>Core Team <br><a
-                                            href="mailto:adelinelohjc@suss.edu.sg">adelinelohjc@suss.edu.sg</a></p>
-                                    <!-- LinkedIn Button -->
-                                    <a href="https://www.linkedin.com/in/adeline-loh-06887750/" target="_blank"
-                                        class="btn btn-primary social-btn">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-
-                                    <!-- GitHub Button -->
-                                    <a href="https://github.com/adelinelohjc" target="_blank" class="btn btn-dark social-btn">
-                                        <i class="bi bi-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-5 mb-5">
-                            <div class="card border-0 h-100">
-                                <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0 text-center">
-                                    <img src="./images/interns/joey.jpg" alt="Joey" class="rounded-circle mb-3"
-                                        width="150">
-                                    <h3 class="fs-4 fw-normal">Joey Tan</h3>
-                                    <p>Software Engineer Intern</p>
-                                    <!-- LinkedIn Button -->
-                                    <a href="https://www.linkedin.com/in/joey-tan-zuyi/" target="_blank"
-                                        class="btn btn-primary social-btn">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-
-                                    <!-- GitHub Button -->
-                                    <a href="https://github.com/jeezusplays" target="_blank"
-                                        class="btn btn-dark social-btn">
-                                        <i class="bi bi-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-5 mb-5">
-                            <div class="card border-0 h-100">
-                                <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0 text-center">
-                                    <img src="./images/interns/sernyang.jpg" alt="Sern Yang" class="rounded-circle mb-3"
-                                        width="150">
-                                    <h3 class="fs-4 fw-normal">Sern Yang</h3>
-                                    <p>Software Engineer Intern</p>
-                                    <!-- LinkedIn Button -->
-                                    <a href="https://www.linkedin.com/in/sern-yang-tan" target="_blank"
-                                        class="btn btn-primary social-btn">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-
-                                    <!-- GitHub Button -->
-                                    <a href="https://github.com/tansernyang" target="_blank"
-                                        class="btn btn-dark social-btn">
-                                        <i class="bi bi-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-5 mb-5">
-                            <div class="card border-0 h-100">
-                                <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0 text-center">
-                                    <img src="./images/interns/bryan_c.jpg" alt="Bryan Chew" class="rounded-circle mb-3"
-                                        width="150">
-                                    <h3 class="fs-4 fw-normal">Bryan Chew</h3>
-                                    <p>Software Engineer Intern</p>
-                                    <!-- LinkedIn Button -->
-                                    <a href="https://www.linkedin.com/in/zhen-yi-chew-3b8669196/" target="_blank"
-                                        class="btn btn-primary social-btn">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-
-                                    <!-- GitHub Button -->
-                                    <a href="https://github.com/bchewzy" target="_blank"
-                                        class="btn btn-dark social-btn">
-                                        <i class="bi bi-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-5 mb-5">
-                            <div class="card border-0 h-100">
-                                <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0 text-center">
-                                    <img src="./images/interns/ethan.jpg" alt="Ethan" class="rounded-circle mb-3"
-                                        width="150">
-                                    <h3 class="fs-4 fw-normal">Ethan Leo</h3>
-                                    <p>Software Engineer Intern</p>
-                                    <!-- LinkedIn Button -->
-                                    <a href="https://www.linkedin.com/in/mqleo" target="_blank"
-                                        class="btn btn-primary social-btn">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-
-                                    <!-- GitHub Button -->
-                                    <a href="https://github.com/efhan-the-unorthodox" target="_blank"
-                                        class="btn btn-dark social-btn">
-                                        <i class="bi bi-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-5 mb-5">
-                            <div class="card border-0 h-100">
-                                <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0 text-center">
-                                    <img src="./images/interns/chi.jpg" alt="Chi" class="rounded-circle mb-3"
-                                        width="150">
-                                    <h3 class="fs-4 fw-normal">Chi Nguyen</h3>
-                                    <p>Software Engineer Intern</p>
-                                    <!-- LinkedIn Button -->
-                                    <a href="https://www.linkedin.com/in/nguyen-le-cam-chi/" target="_blank"
-                                        class="btn btn-primary social-btn">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-
-                                    <!-- GitHub Button -->
-                                    <a href="https://github.com/nlcchi" target="_blank" class="btn btn-dark social-btn">
-                                        <i class="bi bi-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-5 mb-5">
-                            <div class="card border-0 h-100">
-                                <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0 text-center">
-                                    <img src="./images/interns/qistina.jpg" alt="Qistina" class="rounded-circle mb-3"
-                                        width="150">
-                                    <h3 class="fs-4 fw-normal">Qistina Purnamasari</h3>
-                                    <p>Data Engineer Intern</p>
-                                    <!-- LinkedIn Button -->
-                                    <a href="https://www.linkedin.com/in/qistina-purnamasari/" target="_blank"
-                                        class="btn btn-primary social-btn">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-
-                                    <!-- GitHub Button -->
-                                    <a href="https://github.com/rsmnrp" target="_blank" class="btn btn-dark social-btn">
-                                        <i class="bi bi-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <!-- Back to top button -->
-            <button type="button" class="btn btn-secondary btn-floating btn-lg " id="btn-back-to-top">
-                <span class="bi bi-arrow-up"></span>
+    <nav class="navbar navbar-expand-md bg-dark sticky-top" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand d-md-none" href="#">
+                <svg class="bi" width="24" height="24">
+                    <use xlink:href="#aperture" />
+                </svg>
+                VLI @ SUSS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+                aria-controls="offcanvas" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-
-        </main>
-
-        <!-- Footer-->
-        <footer id="sticky-footer" class="py-3 bg-dark">
-            <div class="container">
-                <p class="m-0 text-center text-white">Copyright &copy; VLI@SUSS 2018 -
-                    <script>document.write(new Date().getFullYear());</script>. v0.1.0.alpha1
-                </p>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasLabel">VLI @ SUSS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav flex-grow-1 justify-content-between">
+                        <li class="nav-item"><a class="nav-link" href="index.html">VLI @ SUSS</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="team.html">Our Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://github.com/suss-vli">Our GitHub</a></li>
+                        <li class="nav-item"><a class="nav-link" href="internship.html">Internship</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://suss-vli.github.io/faq">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://suss-ai.github.io/">AI for Good</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://learningservices.suss.edu.sg/">Learning
+                                Services</a></li>
+                    </ul>
+                </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- Header-->
+        <header class="py-5" id="vanta" style="min-height: 576px;">
+            <div class="container px-lg-5">
+                <div class="p-4 p-lg-5 rounded-3 text-center">
+                    <div class="m-4 m-lg-5">
+                        <h1 class="display-1 fw-bold">VLI @ SUSS</h1>
+                        <p class="fs-1"> Our Team</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Team Section -->
+        <section class="pt-2">
+            <div class="container px-lg-5">
+                <!-- <h2 class="fs-2 fw-bold">Team</h2> -->
+                <div class="row gx-lg-5 justify-content-md-center">
+                    <div class="col-lg-4 col-md-5 mb-5">
+                        <div class="card border-0 h-100">
+                            <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0 text-center">
+                                <img src="./images/team/bryan.jpg" alt="Bryan" class="rounded-circle mb-3" width="150">
+                                <h3 class="fs-4 fw-normal">Bryan</h3>
+                                <p>Core Team <br><a href="mailto:bryanlimyt@suss.edu.sg">bryanlimyt@suss.edu.sg</a>
+                                </p>
+                                <!-- LinkedIn Button -->
+                                <a href="https://www.linkedin.com/in/ytbryan1/" target="_blank"
+                                    class="btn btn-primary social-btn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+
+                                <!-- GitHub Button -->
+                                <a href="https://github.com/ytbryan" target="_blank" class="btn btn-dark social-btn">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-5 mb-5">
+                        <div class="card border-0 h-100">
+                            <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0 text-center">
+                                <img src="./images/team/jane.jpg" alt="Jane" class="rounded-circle mb-3" width="150">
+                                <h3 class="fs-4 fw-normal">Jane (Azzahra) Tan</h3>
+                                <p>Core Team <br><a href="mailto:janetanjy@suss.edu.sg">janetanjy@suss.edu.sg</a>
+                                </p>
+                                <!-- LinkedIn Button -->
+                                <a href="https://www.linkedin.com/in/azzahra-durra-tan-jing-yi-jane/" target="_blank"
+                                    class="btn btn-primary social-btn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+
+                                <!-- GitHub Button -->
+                                <a href="https://github.com/azzahrajanetan" target="_blank"
+                                    class="btn btn-dark social-btn">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 mb-5">
+                        <div class="card border-0 h-100">
+                            <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0 text-center">
+                                <img src="./images/interns/brandon.png" alt="Brandon" class="rounded-circle mb-3"
+                                    width="150">
+                                <h3 class="fs-4 fw-normal">Brandon Voon</h3>
+                                <p>Core Team <br><a
+                                        href="mailto:brandonvoonys@suss.edu.sg">brandonvoonys@suss.edu.sg</a></p>
+                                <!-- LinkedIn Button -->
+                                <a href="https://www.linkedin.com/in/brandon-voon" target="_blank"
+                                    class="btn btn-primary social-btn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+
+                                <!-- GitHub Button -->
+                                <a href="https://github.com/vysky" target="_blank" class="btn btn-dark social-btn">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 mb-5">
+                        <div class="card border-0 h-100">
+                            <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0 text-center">
+                                <img src="./images/team/adeline.jpg" alt="Adeline" class="rounded-circle mb-3"
+                                    width="150">
+                                <h3 class="fs-4 fw-normal">Adeline Loh</h3>
+                                <p>Core Team <br><a href="mailto:adelinelohjc@suss.edu.sg">adelinelohjc@suss.edu.sg</a>
+                                </p>
+                                <!-- LinkedIn Button -->
+                                <a href="https://www.linkedin.com/in/adeline-loh-06887750/" target="_blank"
+                                    class="btn btn-primary social-btn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+
+                                <!-- GitHub Button -->
+                                <a href="https://github.com/adelinelohjc" target="_blank"
+                                    class="btn btn-dark social-btn">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 mb-5">
+                        <div class="card border-0 h-100">
+                            <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0 text-center">
+                                <img src="./images/interns/joey.jpg" alt="Joey" class="rounded-circle mb-3" width="150">
+                                <h3 class="fs-4 fw-normal">Joey Tan</h3>
+                                <p>Software Engineer Intern</p>
+                                <!-- LinkedIn Button -->
+                                <a href="https://www.linkedin.com/in/joey-tan-zuyi/" target="_blank"
+                                    class="btn btn-primary social-btn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+
+                                <!-- GitHub Button -->
+                                <a href="https://github.com/jeezusplays" target="_blank"
+                                    class="btn btn-dark social-btn">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-5 mb-5">
+                        <div class="card border-0 h-100">
+                            <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0 text-center">
+                                <img src="./images/interns/sernyang.jpg" alt="Sern Yang" class="rounded-circle mb-3"
+                                    width="150">
+                                <h3 class="fs-4 fw-normal">Sern Yang</h3>
+                                <p>Software Engineer Intern</p>
+                                <!-- LinkedIn Button -->
+                                <a href="https://www.linkedin.com/in/sern-yang-tan" target="_blank"
+                                    class="btn btn-primary social-btn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+
+                                <!-- GitHub Button -->
+                                <a href="https://github.com/tansernyang" target="_blank"
+                                    class="btn btn-dark social-btn">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 mb-5">
+                        <div class="card border-0 h-100">
+                            <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0 text-center">
+                                <img src="./images/interns/bryan_c.jpg" alt="Bryan Chew" class="rounded-circle mb-3"
+                                    width="150">
+                                <h3 class="fs-4 fw-normal">Bryan Chew</h3>
+                                <p>Software Engineer Intern</p>
+                                <!-- LinkedIn Button -->
+                                <a href="https://www.linkedin.com/in/zhen-yi-chew-3b8669196/" target="_blank"
+                                    class="btn btn-primary social-btn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+
+                                <!-- GitHub Button -->
+                                <a href="https://github.com/bchewzy" target="_blank" class="btn btn-dark social-btn">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 mb-5">
+                        <div class="card border-0 h-100">
+                            <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0 text-center">
+                                <img src="./images/interns/ethan.jpg" alt="Ethan" class="rounded-circle mb-3"
+                                    width="150">
+                                <h3 class="fs-4 fw-normal">Ethan Leo</h3>
+                                <p>Software Engineer Intern</p>
+                                <!-- LinkedIn Button -->
+                                <a href="https://www.linkedin.com/in/mqleo" target="_blank"
+                                    class="btn btn-primary social-btn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+
+                                <!-- GitHub Button -->
+                                <a href="https://github.com/efhan-the-unorthodox" target="_blank"
+                                    class="btn btn-dark social-btn">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 mb-5">
+                        <div class="card border-0 h-100">
+                            <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0 text-center">
+                                <img src="./images/interns/chi.jpg" alt="Chi" class="rounded-circle mb-3" width="150">
+                                <h3 class="fs-4 fw-normal">Chi Nguyen</h3>
+                                <p>Software Engineer Intern</p>
+                                <!-- LinkedIn Button -->
+                                <a href="https://www.linkedin.com/in/nguyen-le-cam-chi/" target="_blank"
+                                    class="btn btn-primary social-btn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+
+                                <!-- GitHub Button -->
+                                <a href="https://github.com/nlcchi" target="_blank" class="btn btn-dark social-btn">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 mb-5">
+                        <div class="card border-0 h-100">
+                            <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0 text-center">
+                                <img src="./images/interns/qistina.jpg" alt="Qistina" class="rounded-circle mb-3"
+                                    width="150">
+                                <h3 class="fs-4 fw-normal">Qistina Purnamasari</h3>
+                                <p>Data Engineer Intern</p>
+                                <!-- LinkedIn Button -->
+                                <a href="https://www.linkedin.com/in/qistina-purnamasari/" target="_blank"
+                                    class="btn btn-primary social-btn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+
+                                <!-- GitHub Button -->
+                                <a href="https://github.com/rsmnrp" target="_blank" class="btn btn-dark social-btn">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Back to top button -->
+        <button type="button" class="btn btn-secondary btn-floating btn-lg " id="btn-back-to-top">
+            <span class="bi bi-arrow-up"></span>
+        </button>
+
+    </main>
+
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <div class="row text-white">
+                <div class="col-6 col-md">
+                    <h5>VLI @ SUSS</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary text-decoration-none" href="#whatwedo">What We Do</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="#mission">Our Mission</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="team.html">Our Team</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5><br></h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary text-decoration-none" href="#products">Products and Services</a>
+                        </li>
+                        <li><a class="link-secondary text-decoration-none" href="">GitHub</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="internship.html">Internship</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Others</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary text-decoration-none" href="#">FAQ</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="#">AI for Good</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="#">Learning Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img"
+                    viewBox="0 0 24 24">
+                    <title>Product</title>
+                    <circle cx="12" cy="12" r="10" />
+                    <path
+                        d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
+                </svg> -->
+                    <p class="d-block mb-3 text-white">Copyright &copy; VLI@SUSS 2018 -
+                        <script>document.write(new Date().getFullYear());</script>. v0.1.0.alpha1
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

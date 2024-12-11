@@ -1,8 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
 
 <head>
+    <!-- <script src="../assets/js/color-modes.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
     <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta property="og:title" content="VLI @ SUSS" />
     <meta property="og:image" content="https://suss-vli.github.io/images/suss.jpg" />
@@ -49,175 +51,339 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/wiggle.css" rel="stylesheet" />
     <link href="css/btn_back_to_top.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+        }
+
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
+
+        .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important;
+        }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="css/product.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="outer">
-        <main class="content">
-
-            <!-- Header-->
-            <header class="py-5" id="vanta" style="min-height: 576px;">
-                <div class="container px-lg-5">
-                    <div class="p-4 p-lg-5 rounded-3 text-center">
-                        <div class="m-4 m-lg-5">
-                            <h1 class="display-1 fw-bold">VLI @ SUSS</h1>
-                            <p class="fs-1"><span class="typing"></span> for Every School of SUSS</p>
-                            <!-- <div class="d-grid gap-2 d-md-block"> -->
-                            <a class="btn btn-primary btn-lg my-1" href="http://github.com/suss-vli">Github</a>
-                            <a class="btn btn-primary btn-lg my-1" href="team.html">Our Team</a>
-                            <a class="btn btn-primary btn-lg my-1"
-                                href="https://suss-vli.github.io/internship">Internship</a>
-                            <a class="btn btn-primary btn-lg my-1" href="http://suss-vli.github.io/faq">FAQ</a>
-                            <a class="btn btn-primary btn-lg  my-1" href="https://suss-ai.github.io/">AI for Good</a>
-                            <a class="btn btn-danger btn-lg  my-1" href="https://learningservices.suss.edu.sg/">Learning
-                                Services</a>
-                            <!-- </div> -->
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <!-- Page Content-->
-
-            <section class="pt-4">
-                <div class="container px-lg-5 pb-4">
-                    <h2 class="fs-2 fw-bold">What We Do</h2>
-                    <p class="fs-4">
-                        VLI@SUSS is a virtual learning infrastructure initiative that brings cloud-based, interactive,
-                        and automated digital experiences to classrooms, empowering every student and educator at SUSS
-                        and beyond.
-                    </p>
-                </div>
-
-                <div class="container px-lg-5 pb-4">
-                    <h2 class="fs-2 fw-bold">Our Mission</h2>
-                    <p class="fs-4">
-                        Our mission is to bring virtual computing & interactive digital experience to every classroom of
-                        SUSS and beyond.
-                    </p>
-                </div>
-
-                <div class="container px-lg-5 text-center">
-                    <!-- Page Features-->
-                    <div class="row gx-lg-5 justify-content-md-center">
-                        <div class="col-lg-6 col-xxl-4 mb-5">
-                            <div class="card bg-light border-0 h-100">
-                                <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
-                                            class="bi bi-collection"></i></div>
-                                    <h2 class="fs-4 fw-bold">Git & Version Control</h2>
-                                    <p class="mb-0">Git is a free, open-source distributed version control system that
-                                        tracks project and file changes with multiple contributors.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-xxl-4 mb-5">
-                            <div class="card bg-light border-0 h-100">
-                                <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
-                                            class="bi bi-cloud-download"></i></div>
-                                    <h2 class="fs-4 fw-bold">Linux</h2>
-                                    <p class="mb-0">Linux is an open-source, Unix-like operating system for various
-                                        devices developed by the community. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-xxl-4 mb-5">
-                            <div class="card bg-light border-0 h-100">
-                                <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
-                                            class="bi bi-card-heading"></i></div>
-                                    <h2 class="fs-4 fw-bold">Docker and Open Containers</h2>
-                                    <p class="mb-0">Docker is an open platform for developing, shipping, and running
-                                        applications, empowering learners to run their cloud computing platform locally
-                                        for optimal learning.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-xxl-4 mb-5">
-                            <div class="card bg-light border-0 h-100">
-                                <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
-                                            class="bi bi-bootstrap"></i></div>
-                                    <h2 class="fs-4 fw-bold">Cloud Computing & Infrastructure</h2>
-                                    <p class="mb-0">Cloud computing delivers computing services over the Internet,
-                                        providing faster innovation, flexible resources, and economies of scale. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-xxl-4 mb-5">
-                            <div class="card bg-light border-0 h-100">
-                                <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
-                                            class="bi bi-code"></i></div>
-                                    <h2 class="fs-4 fw-bold">Interactive & Open Source Lab Guide</h2>
-                                    <p class="mb-0">We believe an interactive lab guide is the best tool for engaging
-                                        learners in a smart way.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-xxl-4 mb-5">
-                            <div class="card bg-light border-0 h-100">
-                                <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
-                                            class="bi bi-patch-check"></i></div>
-                                    <h2 class="fs-4 fw-bold">Assisted Grading, Testing & Automation</h2>
-                                    <p class="mb-0">We believe that machine-gradable exercises/questions gives learners
-                                        continuous feedback on their coding assignments.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="pt-4">
-                <div class="container px-lg-5 pb-4">
-                    <h2 class="fs-2 fw-bold">Our Products and Services</h2>
-                </div>
-
-                <div class="container px-lg-5 pb-4">
-                    <div class="d-flex align-items-start">
-                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
-                            aria-orientation="vertical">
-                            <button class="nav-link active" id="v-pills-virtuallab-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-virtuallab" type="button" role="tab" aria-controls="v-pills-virtuallab"
-                                aria-selected="true">Virtual Lab</button>
-                            <button class="nav-link" id="v-pills-labguide-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-labguide" type="button" role="tab"
-                                aria-controls="v-pills-labguide" aria-selected="false">LabGuide</button>
-                            <button class="nav-link" id="v-pills-gos-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-gos" type="button" role="tab"
-                                aria-controls="v-pills-gos" aria-selected="false">Garden of Safety</button>
-                        </div>
-                        <div class="tab-content" id="v-pills-tabContent">
-                            <div class="tab-pane fade show active" id="v-pills-virtuallab" role="tabpanel"
-                                aria-labelledby="v-pills-virtuallab-tab">Virtual Lab is our containerised coding environment providing hands-on programming experience in fully set-up virtual labs.</div>
-                            <div class="tab-pane fade" id="v-pills-labguide" role="tabpanel"
-                                aria-labelledby="v-pills-labguide-tab">LabGuide is a programming companion offering guided exercises with integrated autograding for instant feedback.</div>
-                            <div class="tab-pane fade" id="v-pills-gos" role="tabpanel"
-                                aria-labelledby="v-pills-gos-tab">Co-developed by PAVE and SUSS UniLEARN, this app uses engaging narratives and interactive gameplay to teach young children body safety rules, empowering them to identify private parts, assert ownership, confidently say “no” to unsafe situations, and seek help from trustworthy adults. </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Back to top button -->
-            <button type="button" class="btn btn-secondary btn-floating btn-lg " id="btn-back-to-top">
-                <span class="bi bi-arrow-up"></span>
+    <nav class="navbar navbar-expand-md bg-dark sticky-top" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand d-md-none" href="#">
+                <svg class="bi" width="24" height="24">
+                    <use xlink:href="#aperture" />
+                </svg>
+                VLI @ SUSS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+                aria-controls="offcanvas" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasLabel">VLI @ SUSS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav flex-grow-1 justify-content-between">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">VLI @ SUSS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="team.html">Our Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://github.com/suss-vli">Our GitHub</a></li>
+                        <li class="nav-item"><a class="nav-link" href="internship.html">Internship</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://suss-vli.github.io/faq">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://suss-ai.github.io/">AI for Good</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://learningservices.suss.edu.sg/">Learning
+                                Services</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-        </main>
+    <main>
+        <!-- Header-->
+        <header class="py-5" id="vanta" style="min-height: 576px;">
+            <div class="container px-lg-5">
+                <div class="p-4 p-lg-5 rounded-3 text-center">
+                    <div class="m-4 m-lg-5">
+                        <h1 class="display-1 fw-bold">VLI @ SUSS</h1>
+                        <p class="fs-1"><span class="typing"></span> for Every School of SUSS</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Page Content-->
 
-        <!-- Footer-->
-        <footer id="sticky-footer" class="py-3 bg-dark">
-            <div class="container">
-                <p class="m-0 text-center text-white">Copyright &copy; VLI@SUSS 2018 -
-                    <script>document.write(new Date().getFullYear());</script>. v0.1.0.alpha1
+        <section class="pt-4">
+            <div class="container px-lg-5 pb-4" id="whatwedo">
+                <h2 class="fs-3 fw-bold">What We Do</h2>
+                <p class="fs-5">
+                    VLI@SUSS is a virtual learning infrastructure initiative that brings cloud-based, interactive,
+                    and automated digital experiences to classrooms, empowering every student and educator at SUSS
+                    and beyond.
                 </p>
             </div>
-        </footer>
-    </div>
+
+            <div class="container px-lg-5 pb-4" id="mission">
+                <h2 class="fs-3 fw-bold">Our Mission</h2>
+                <p class="fs-5">
+                    Our mission is to bring virtual computing & interactive digital experience to every classroom of
+                    SUSS and beyond.
+                </p>
+            </div>
+
+            <div class="container px-lg-5 text-center">
+                <!-- Page Features-->
+                <div class="row gx-lg-5 justify-content-md-center">
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
+                                        class="bi bi-collection"></i></div>
+                                <h2 class="fs-4 fw-bold">Git & Version Control</h2>
+                                <p class="mb-0">Git is a free, open-source distributed version control system that
+                                    tracks project and file changes with multiple contributors.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
+                                        class="bi bi-cloud-download"></i></div>
+                                <h2 class="fs-4 fw-bold">Linux</h2>
+                                <p class="mb-0">Linux is an open-source, Unix-like operating system for various
+                                    devices developed by the community. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
+                                        class="bi bi-card-heading"></i></div>
+                                <h2 class="fs-4 fw-bold">Docker and Open Containers</h2>
+                                <p class="mb-0">Docker is an open platform for developing, shipping, and running
+                                    applications, empowering learners to run their cloud computing platform locally
+                                    for optimal learning.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
+                                        class="bi bi-bootstrap"></i></div>
+                                <h2 class="fs-4 fw-bold">Cloud Computing & Infrastructure</h2>
+                                <p class="mb-0">Cloud computing delivers computing services over the Internet,
+                                    providing faster innovation, flexible resources, and economies of scale. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
+                                        class="bi bi-code"></i></div>
+                                <h2 class="fs-4 fw-bold">Interactive & Open Source Lab Guide</h2>
+                                <p class="mb-0">We believe an interactive lab guide is the best tool for engaging
+                                    learners in a smart way.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
+                                        class="bi bi-patch-check"></i></div>
+                                <h2 class="fs-4 fw-bold">Assisted Grading, Testing & Automation</h2>
+                                <p class="mb-0">We believe that machine-gradable exercises/questions gives learners
+                                    continuous feedback on their coding assignments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-4">
+            <div class="container px-lg-5 pb-4" id="products">
+                <h2 class="fs-2 fw-bold">Our Products and Services</h2>
+            </div>
+
+            <div class="container px-lg-5 pb-4">
+                <div class="d-flex align-items-start">
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <button class="nav-link active" id="v-pills-virtuallab-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-virtuallab" type="button" role="tab"
+                            aria-controls="v-pills-virtuallab" aria-selected="true">Virtual Lab</button>
+                        <button class="nav-link" id="v-pills-labguide-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-labguide" type="button" role="tab" aria-controls="v-pills-labguide"
+                            aria-selected="false">LabGuide</button>
+                        <button class="nav-link" id="v-pills-gos-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-gos" type="button" role="tab" aria-controls="v-pills-gos"
+                            aria-selected="false">Garden of Safety</button>
+                    </div>
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-virtuallab" role="tabpanel" aria-labelledby="v-pills-virtuallab-tab">
+                            <div class="card-body">
+                                <h5 class="card-title">Virtual Lab</h5>
+                                <p class="card-text">Virtual Lab is our containerised coding environment
+                                    providing hands-on programming experience in fully set-up virtual labs. </p>
+                                <a href="#" class="btn btn-primary">More Details</a>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-labguide" role="tabpanel" aria-labelledby="v-pills-labguide-tab">
+                            <div class="card-body">
+                                <h5 class="card-title">LabGuide</h5>
+                                <p class="card-text">LabGuide is a programming companion offering guided
+                                    exercises with integrated autograding for instant feedback. </p>
+                                <a href="#" class="btn btn-primary">More Details</a>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-gos" role="tabpanel" aria-labelledby="v-pills-gos-tab">
+                            <div class="card-body">
+                                <h5 class="card-title">Garden of Safety</h5>
+                                <p class="card-text">Co-developed by PAVE and SUSS UniLEARN, this app uses engaging
+                                    narratives and interactive
+                                    gameplay to teach young children body safety rules, empowering them to identify
+                                    private
+                                    parts, assert ownership, confidently say “no” to unsafe situations, and seek help
+                                    from
+                                    trustworthy adults. </p>
+                                <a href="#" class="btn btn-primary">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Back to top button -->
+        <button type="button" class="btn btn-secondary btn-floating btn-lg " id="btn-back-to-top">
+            <span class="bi bi-arrow-up"></span>
+        </button>
+    </main>
+
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <div class="row text-white">
+                <div class="col-6 col-md">
+                    <h5>VLI @ SUSS</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary text-decoration-none" href="#whatwedo">What We Do</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="#mission">Our Mission</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="team.html">Our Team</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5><br></h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary text-decoration-none" href="#products">Products and Services</a>
+                        </li>
+                        <li><a class="link-secondary text-decoration-none" href="">GitHub</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="internship.html">Internship</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Others</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary text-decoration-none" href="#">FAQ</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="#">AI for Good</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="#">Learning Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img"
+                    viewBox="0 0 24 24">
+                    <title>Product</title>
+                    <circle cx="12" cy="12" r="10" />
+                    <path
+                        d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
+                </svg> -->
+                    <p class="d-block mb-3 text-white">Copyright &copy; VLI@SUSS 2018 -
+                        <script>document.write(new Date().getFullYear());</script>. v0.1.0.alpha1
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -271,6 +437,9 @@
             }
         };
     </script>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
